@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial, sans-serif";     
+  font-size: 16px;
+  color: #000000;
+  line-height: 22px;
+  min-width: 900px;
+}
+h1{
+  font-size: 40px;
+  line-height:       /* в макете межстр.инт. auto */
+  
+}
+h2{
+  font-size: 36px;
+  line-height: 36px;
+}
+ul{
+  list-style: none;
+}
