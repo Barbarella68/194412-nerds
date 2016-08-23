@@ -9,11 +9,11 @@
   </head>
   <body>
     <header class="main-header">        <!--шапка главной страницы-->
-      <div class="container">
-        <div class="index-logo">
-          <img src="img/index/logo.png" width="139" height="56" alt="Nёrd's">
-        </div>
+      <div class="container clearfix">
         <nav class="main-navigation">           <!--меню навигации-->
+          <a class="index-logo" href="index.html">
+            <img src="img/index/logo.png" width="139" height="56" alt="Nёrd's">
+          </a>
           <ul>
             <li>
               <a href="#">Студия</a>
@@ -37,7 +37,7 @@
     <main class="container">
       <div class="wrapper">          <!--карусель-->
         <div class="sliders">
-          <div class="sliders-slide1">     <!--слайдер 1-->  
+          <div class="sliders slide1">     <!--слайдер 1-->  
             <b class="slide1-slogan">Долго, дорого, скрупулезно.</b>  
             <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>  
             <div class="btn">  
@@ -47,8 +47,8 @@
               <img src="img/index/slide1.png" width="338" height="231" alt="слайд">  
             </div>  
           </div>  
-          <div class="sliders-slide2"></div>     <!--слайдер 1-->  
-          <div class="sliders-slide3"></div>      <!--слайдер 1-->  
+          <div class="sliders slide2"></div>     <!--слайдер 1-->  
+          <div class="sliders slide3"></div>      <!--слайдер 1-->  
         </div>  
         <input type="radio" name="point" id="slide1" checked>  
         <input type="radio" name="point" id="slide2">  
@@ -60,38 +60,38 @@
         </div>  
       </div>  
       <div class="directions">
-        <div class="directions-left">
+        <div class="directions-item">
           <img src="img/index/directions1.png" width="240" height="124" alt="">  
-          <h2 class="directions-title">Веб-сайты</h2>  
-          <p>Мир никогда не будет прежним<br>после того как увидит ваш сайт!</p>  
+          <h2 class="text-title">Веб-сайты</h2>  
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>  
           <div class="btn">  
             <a href="#">Заказать</a>  
           </div>  
         </div>
-        <div class="directions-middle">  
+        <div class="directions-item">  
           <img src="img/index/directions2.png" width="240" height="124" alt="">  
-          <h2 class="directions-title">Приложения</h2>  
-          <p>Покорите топ-10 приложений<br>в APPStore и Google Play</p>  
+          <h2 class="text-title">Приложения</h2>  
+          <p>Покорите топ-10 приложений в APPStore и Google Play</p>  
           <div class="btn">  
             <a href="#">Заказать</a>  
           </div>  
         </div>
-        <div class="directions-right">
+        <div class="directions-item">
           <img src="img/index/directions3.png" width="240" height="124" alt="">
-          <h2 class="directions-title">Презентации</h2>
-          <p>Вы даже не подозреваете,<br>насколько вы изумительны!</p>
+          <h2 class="text-title">Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <div class="btn">
             <a href="#">Заказать</a>
           </div> 
         </div>
       </div>  
-      <div class="description">
-        <p><b>>Мы - маленькая, но гордая <br>дизайн-студия из Краснодара.</b></p>
-        <span>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива.
+      <div class="description clearfix">
+        <p><b>Мы - маленькая, но гордая <br>дизайн-студия из Краснодара.</b></p>
+        <span>Исповедуем принципы минимализма и чистоты. Ставим математический<br>расчет выше креатива.
         Работаем не покладая рук, как роботы.
         </span>
         <div class="description-left">
-          <p>Выполняем заказы на разработку:</p>
+          <p class="text-title">Выполняем заказы на разработку:</p>
           <p>Веб-сайтов любой сложности</p>
           <p>Мобильных приложений для iOS и Android</p>
           <p>Слайдшоу и видео для корпоративных презентаций</p>
@@ -100,7 +100,7 @@
           <img src="img/index/logo2.png" width="187" height="75" alt="Nёrd's">
         </div>
         <div class="description-right">
-          <p>Как мы работаем:</p>
+          <p class="text-title">Как мы работаем:</p>
           <p>С самоотдачей 146%</p>
           <p>Соблюдая сроки на 100%</p>
           <p>По предоплате 50%</p>
@@ -114,7 +114,7 @@
     </main>
     <footer class="main-footer">           <!--футер-->
       <div class="footer-map">
-        <a href="#"><img src="img/index/footer-map.png" width="1200" height="416" alt="Где мы находимся"></a>
+        <a href="#"><img src="img/index/footer-map.png" width="1200" height="415" alt="Где мы находимся"></a>
         <article class="footer-contacts">          
           <b>Nёrd's Design Studio</b>    
           <p>191186, Санкт-Петербург<br>    
@@ -150,8 +150,8 @@
           <a class="social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn-inst" href="#">Инстаграм</a>
-          <b>Давайте дружить, это выгодно!<br>
-          Скидка 10% для друзей из социальных сетей.</b>
+          <b>Давайте дружить, это выгодно!<br><b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>  
     </footer>    
