@@ -9,12 +9,12 @@ body {
   min-width: 900px;    /* минимальная ширина экрана*/ 
 }
 .main-header {
-  width: 1200px;
-  min-height: 95px;
+  /*width: 1200px; */
+  min-height: 95px; 
   padding-top: 25px;
-  margin-bottom: 15px;
-  background: #eeeeee;
-  
+  /*margin-bottom: 15px;  */
+  background: #eeeeee; 
+  text-transform: uppercase; 
 }
 .text-title {
   text-transform: uppercase;  
@@ -52,7 +52,7 @@ body {
 }
 .main-navigation li {
   display: inline;
-  margin-right: 45px; 
+  margin-right: 35px; 
   font-size: 14px;
   line-height: 30px; 
 }
@@ -63,9 +63,91 @@ body {
   font-size: 14px;
   line-height: 30px; 
 }
+a {
+  text-decoration: none;
+}
 .wrapper {
+  position: relative;
+  height: 315px;
+  background-color: #eeeeee;
   margin-bottom: 80px;
 }
+/*.slider-inner {} */
+.sliders {
+  display: none;  
+}
+.slider-controls {            /*круглые кнопки слайдера */
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  height: 10px;
+  text-align: center;
+  z-index: 100;
+  line-height: 0;
+}
+.slider-controls label {
+  display: inline-block;
+  vertical-align: top;
+  width: 4px;
+  height: 4px;
+  margin: 0 3px;
+  border: 3px solid #ffffff;
+  background: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slide1:checked ~ .slider-controls label:nth-child(1),            /*переключение круглых кнопок слайдера */
+.slide2:checked ~ .slider-controls label:nth-child(2),
+.slide3:checked ~ .slider-controls label:nth-child(3) { 
+  background:#c1c1c1;
+}
+.slider-list {}
+.slider-item {                              /*все неактивные слайды не отображаются на экране */
+  position: relative;
+  display: none;
+}
+.slide1:checked ~ .slider-list .slider-item:nth-child(1),       /*переключение между слайдами */
+.slide2:checked ~ .slider-list .slider-item:nth-child(2),
+.slide3:checked ~ .slider-list .slider-item:nth-child(3) { 
+  display: block;
+}
+.slider-item-image {             /*картинка слайда */
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+.slider-item-image img {
+  /*float: right;*/
+}
+.slider-item-text {              /*текст на слайде */
+  position: absolute;
+  top: 50px;
+}
+.slider-item-text h2 {
+  padding: 0;
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+}
+.slider-item-text p {
+  padding: 5px 0;
+  color: #283136;
+}
+.slider-button {           /* кнопка */
+  width: 240px;
+  margin-top: 22px;
+  width: 240px;
+  height: 38px;
+  background: #fb565a;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 16px 70px;
+  text-transform: uppercase;
+}  
 .directions-item {
   float: left;
   width: 240px;

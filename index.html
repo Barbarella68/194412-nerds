@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">        <!--шапка главной страницы-->
       <div class="container clearfix">
-        <nav class="main-navigation">           <!--меню навигации-->
+        <nav class="main-navigation" class="text-title">           <!--меню навигации-->
           <a class="index-logo" href="index.html">
             <img src="img/index/logo.png" width="139" height="56" alt="Nёrd's">
           </a>
@@ -35,29 +35,51 @@
       </div>  
     </header>
     <main class="container">
-      <div class="wrapper">          <!--карусель-->
-        <div class="sliders">
-          <div class="sliders slide1">     <!--слайдер 1-->  
-            <b class="slide1-slogan">Долго, дорого, скрупулезно.</b>  
-            <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>  
-            <div class="btn">  
-              <a href="#">Узнать больше</a>  
-            </div>    
-            <div class="sliders-image">             
-              <img src="img/index/slide1.png" width="338" height="231" alt="слайд">  
+      <div class="wrapper">          
+        <div class="sliders-inner">
+          <input class="sliders slide1" type="radio" id="slide1" name="point" checked>
+          <input class="sliders slide2" type="radio" id="slide2" name="point">
+          <input class="sliders slide3" type="radio" id="slide3" name="point">
+          <div class="slider-controls">  
+            <label class="slider-control" for="slide1"></label>  
+            <label class="slider-control" for="slide2"></label>  
+            <label class="slider-control" for="slide3"></label>  
+          </div> 
+          <div class="slider-list">
+            <div class="slider-item"> 
+              <div class="slider-item-image">
+			  			  <img src="img/index/slide1.png" width="338" height="231" alt="">
+			  		  </div>
+              <div class="slider-item-text">
+                <h2>Долго, дорого,<br>скрупулезно.</h2>
+			  		  	<p>Математически выверенный дизайн <br>для вашего сайта или мобильного приложения.</p>
+			  		  	<a href="#" class="button  slider-button">Узнать больше</a>
+              </div>
+            </div> 
+            <div class="slider-item">  
+              <div class="slider-item-image">
+			  			  <img src="img/index/slide2.png" width="230" height="249" alt="">
+			  		  </div>
+              <div class="slider-item-text">
+                <h2> Любите ли вы математику,<br>как любим ее мы?</h2>
+			  			  <p> Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив,чтобы дать им
+                возможность все просчитать</p>
+                <a href="#" class="button  slider-button">Узнать больше</a>
+              </div>
+            </div> 
+            <div class="slider-item">
+              <div class="slider-item-image">
+			  			  <img src="img/index/slide3.png" width="333" height="319" alt="">
+			  		  </div>            
+              <div class="slider-item-text">
+                <h2>Только наркотики,<br>только хардкор!</h2>
+			  			  <p> Все дизайнерские решения в нашей компании принимаются <br>только под воздействием
+                качественных галлюциногенов</p>
+			  			  <a href="#" class="button  slider-button">Узнать больше</a>
+              </div>
             </div>  
-          </div>  
-          <div class="sliders slide2"></div>     <!--слайдер 1-->  
-          <div class="sliders slide3"></div>      <!--слайдер 1-->  
-        </div>  
-        <input type="radio" name="point" id="slide1" checked>  
-        <input type="radio" name="point" id="slide2">  
-        <input type="radio" name="point" id="slide3">  
-        <div class="controls">  
-          <label for="slide1"></label>  
-          <label for="slide2"></label>  
-          <label for="slide3"></label>  
-        </div>  
+           </div> 
+         </div>         
       </div>  
       <div class="directions">
         <div class="directions-item">
@@ -150,7 +172,7 @@
           <a class="social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn-fb" href="#">Фейсбук</a>
           <a class="social-btn-inst" href="#">Инстаграм</a>
-          <b>Давайте дружить, это выгодно!<br><b>
+          <b>Давайте дружить, это выгодно!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>  
