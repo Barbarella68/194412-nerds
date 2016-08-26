@@ -10,7 +10,7 @@
   <body>
     <header class="main-header">        <!--шапка главной страницы-->
       <div class="container clearfix">
-        <nav class="main-navigation" class="text-title">           <!--меню навигации-->
+        <nav class="main-navigation">           <!--меню навигации-->
           <a class="index-logo" href="index.html">
             <img src="img/index/logo.png" width="139" height="56" alt="Nёrd's">
           </a>
@@ -86,7 +86,7 @@
           <img src="img/index/directions1.png" width="240" height="124" alt="">  
           <h2 class="text-title">Веб-сайты</h2>  
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>  
-          <div class="btn">  
+          <div class="button order-button">  
             <a href="#">Заказать</a>  
           </div>  
         </div>
@@ -94,7 +94,7 @@
           <img src="img/index/directions2.png" width="240" height="124" alt="">  
           <h2 class="text-title">Приложения</h2>  
           <p>Покорите топ-10 приложений в APPStore и Google Play</p>  
-          <div class="btn">  
+          <div class="button order-button">  
             <a href="#">Заказать</a>  
           </div>  
         </div>
@@ -102,7 +102,7 @@
           <img src="img/index/directions3.png" width="240" height="124" alt="">
           <h2 class="text-title">Презентации</h2>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <div class="btn">
+          <div class="button order-button">
             <a href="#">Заказать</a>
           </div> 
         </div>
@@ -128,54 +128,41 @@
           <p>По предоплате 50%</p>
         </div>
       </div>
-      <div class="link-logo">               <!--ссылки-логотипы-->
-        <a href="#"><img src="img/index/glukhanko.png" width="198" height="37" alt="Glukhanko"></a>
-        <a href="#"><img src="img/index/htmlacademy.png" width="199" height="68" alt="Html Academy"></a>
-        <a href="#"><img src="img/index/barbershop.png" width="209" height="86" alt="Barbershop"></a>
+      <div class="link-logo">      <!--ссылки-логотипы-->
+        <div class="link-logo-img">
+        <a href="#"><img src="img/index/glukhankonew.png" width="240" height="100" alt="Glukhanko"></a>
+        </div>
+        <div class="link-logo-img">
+        <a href="#"><img src="img/index/htmlacademynew.png" width="240" height="100" alt="Html Academy"></a>
+        </div>
+        <div class="link-logo-img" >
+        <a href="#"><img src="img/index/barbershopnew.png" width="240" height="100" alt="Barbershop"></a>
+        </div>
       </div>
     </main>
     <footer class="main-footer">           <!--футер-->
       <div class="footer-map">
-        <a href="#"><img src="img/index/footer-map.png" width="1200" height="415" alt="Где мы находимся"></a>
-        <article class="footer-contacts">          
+        <a href="#"><img src="img/index/footer-map.png" width="1200" height="415" alt="Где мы находимся"></a> 
+        <article class="footer-contacts">
+          <div class="footer-contacts-text">          
           <b>Nёrd's Design Studio</b>    
-          <p>191186, Санкт-Петербург<br>    
-          ул.Б.Конюшенная, д.19/8</p>    
-          <p>тел +7(812)275-75-75</p>    
-          <div class="btn">    
-            <a href="#openmodal">Напишите нам</a>     
-            <div id="openmodal" class="modaldialog">    
-		          <a href="#close" title="Закрыть" class="close">X</a>    
-		          <h3>Напишите нам</h3>    
-		          <form class="" action="#" method="post">    
-                <fieldset class="modaldata">    
-                  <label for="name">Имя:</label>    
-                  <input type="text" id="name" name="name" size="30"><br>    
-                  <label for="email">E-mail:</label>    
-                  <input type="text" id="email" name="email" size="30">    
-                </fieldset>     
-                <fieldset class="modaldialog">    
-                  <label for="message">Сообщение:</label>    
-                  <textarea id="message" name="message" cols="30" rows="10"></textarea>    
-                </fieldset>    
-                <button class="btn" type="submit">Отправить</button>    
-              </form>      
-	          </div>            
-          </div>      
-        </article>    
-        <div class="pointer-logo">    
-          <img src="http://placehold.it/100x50" alt="Nёrd's">    
-        </div>    
-      </div>       
-      <div class="container">
-        <div class="footer-social">         <!--иконки-->
-          <a class="social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn-inst" href="#">Инстаграм</a>
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+          <p>191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>    
+          <p>тел. +7 (812) 275-75-75</p>
+          </div>         
+          <a href="#" class="button  callback-button">Напишите нам</a>
+        </article>  
+        <div class="container">
+          <div class="footer-social">        
+            <a class="social-btn-vk" href="#">Вконтакте</a>
+            <a class="social-btn-fb" href="#">Фейсбук</a>
+            <a class="social-btn-inst" href="#">Инстаграм</a>
+          </div>
+          <div class="footer-slogan">          
+            <b>Давайте дружить, это выгодно!</b>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
         </div>
-      </div>  
+      </div>   
     </footer>    
   </body>
 </html>

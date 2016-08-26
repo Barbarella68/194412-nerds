@@ -66,12 +66,22 @@ body {
 a {
   text-decoration: none;
 }
+.button {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  /*text-align: center; */
+  
+  
+}  
 .wrapper {
   position: relative;
-  height: 315px;
-  background-color: #eeeeee;
+  height: 316px;
+  background: #eeeeee;
   margin-bottom: 80px;
 }
+
+
 /*.slider-inner {} */
 .sliders {
   display: none;  
@@ -137,16 +147,12 @@ a {
   color: #283136;
 }
 .slider-button {           /* кнопка */
-  width: 240px;
   margin-top: 22px;
   width: 240px;
   height: 38px;
   background: #fb565a;
   color: #ffffff;
-  font-size: 12px;
-  line-height: 18px;
   padding: 16px 70px;
-  text-transform: uppercase;
 }  
 .directions-item {
   float: left;
@@ -157,10 +163,18 @@ a {
 .directions-item:last-child {
   margin-right: 0;
 }
-.directions-item p {
+.directions-item  p {
   font-size: 15px;
   line-height: 22px;
 }
+.directions-item  h2 {
+  font-size: 18px;
+  line-height: 30px;
+}
+.order-button {
+  
+}
+
 .description {
   margin-bottom: 45px;
 }
@@ -184,30 +198,94 @@ b {
   font-size: 36px;
   line-height: 36px;
 }
-.link-logo .img {
+.link-logo-img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 76px;
+  margin-bottom: 115px;
+  
+}
+.link-logo-img:last-child {
+  margin-right: 0;
+}
+/*.link-logo img {
   float: left;
   width: 240px;
   margin-right: 80px;
+  
+  margin-bottom: 115px;
 }
-.link-logo {
-  margin-bottom: 90px;
-}
-.link-logo:last-child {
-  margin-right: 0;
-}
+.link-logo img:last-child {
+  margin-right: 0; 
+}  */
 .footer-map {
-  margin-bottom: 80px;
+  position: relative;
+  margin-bottom: 80px; 
 }
-h1{
-  font-size: 40px;
- /* line-height: auto;
-  width: 700px;
-  margin: 0 auto; */
+.footer-contacts {
+  position: absolute;
+  /*top: 330px; */
+  bottom: 185px;
+  left: 160px; 
+  width: 250px;
+  min-height: 240px;
+  background: #ffffff; 
+  border: 1px solid;
+  }
+.footer-contacts-text {
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 25px;
+  padding-bottom: 30px;
+    
+  }
+.footer-contacts-text b {
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  }
+.callback-button {
+  width: 204px;
+  height: 38px;
+  background: #fb565a;
+  color: #ffffff;
+  padding: 16px 54px;
+  margin-left: 23px;
+  margin-right: 23px;
+  margin-bottom: 23px; 
+  }
+
+.footer-social {
+  float: left;
+  width: 240px;
+  height: 215px;
+  margin-right: 80px;
 }
-h2{
+
+.footer-social a {
+  margin-right: 18px;
+}
+.footer-social b {
   font-size: 36px;
   line-height: 36px;
 }
+/*
+.footer-slogan {
+  
+}  */
+h1{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  
+ 
+}
+/*h2{
+  font-size: 36px;
+  line-height: 36px;
+} */
 
 
 
