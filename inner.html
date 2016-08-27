@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Nёrd's/Catalog</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic">
   </head>
   <body>
@@ -34,15 +34,20 @@
         </div>
       </div>  
     </header>
-    <main class="container">          <!--основное содержание-->
+    <main class="container clearfix">          <!--основное содержание-->
       <h1>Добро пожаловать в магазин<br>готовых макетов</h1>     <!--заголовок приветствие-->
       <div class="catalog-filter">      
-        <form class="sidebar clearfix" action="#" method="get">    <!--боковая колонка -фильтр-->
+        <form class="sidebar " action="#" method="get">    <!--боковая колонка -фильтр-->
           <fieldset class="sidebar-filter-value">  
             <legend>Стоимость:</legend>  
               <div class="scrolling"></div>  
-              <span>от<input type="text">до<input type="text"></span>  
-          </fieldset>  
+              <div class="scrolling-cell">
+                <span>от</span>
+                <input type="text" placeholder="0">  
+                <span>до</span>
+                <input type="text" placeholder="15000">
+              </div>  
+          </fieldset>    
           <fieldset class="sidebar-filter-item">  
             <legend>Сетка:</legend>  
               <p><label class="filter-item">    
@@ -86,7 +91,7 @@
                 </label>    
               </p>                  
           </fieldset>  
-          <button type="submit" class="button">Показать</button>    
+          <button type="submit" class="button catalog-filter-button">Показать</button>    
         </form>      
       </div>  
       <div class="catalog-list">         <!--каталог макетов-->
@@ -178,14 +183,14 @@
     <footer class="main-footer">           <!--футер-->
       <div class="footer-map">
         <a href="#"><img src="img/index/footer-map.png" width="1200" height="415" alt="Где мы находимся"></a> 
-        <article class="footer-contacts">
+        <div class="footer-contacts">
           <div class="footer-contacts-text">          
           <b>Nёrd's Design Studio</b>    
           <p>191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>    
           <p>тел. +7 (812) 275-75-75</p>
           </div>         
           <a href="#" class="button  callback-button">Напишите нам</a>
-        </article>  
+        </div>  
         <div class="container">
           <div class="footer-social">        
             <a class="social-btn-vk" href="#">Вконтакте</a>

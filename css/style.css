@@ -70,9 +70,6 @@ a {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
-  
-  
-  
 }  
 .wrapper {
   position: relative;
@@ -219,21 +216,62 @@ b {
   margin-right: 0; 
 }  */
 .catalog-filter {
-  margin-top: 75px;
-}
-.sidebar {
   float: left;
+  margin-top: 165px;
   width: 240px;
-}
-/*
-fieldset {
+  margin-right: 80px;
+} 
+/*fieldset {
   border-color: transparent;
 } */
-
-
+.sidebar-filter-value {
+  padding: 0;
+} 
+.sidebar-filter-item {
+  padding: 0;
+}
+.sidebar-filter-features {
+  padding: 0;
+}
+.scrolling {
+  width: 240px;
+  height: 80px;
+  background: #f1f1f1;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  
+}
+/*.scrolling-cell {
+  text-align: justify;
+} */
+.scrolling-cell input {
+  width: 80px;
+  height: 38px;
+  border: 0;
+  text-align: center;
+  background: #f1f1f1;
+  
+}
+.sidebar fieldset {
+  margin-bottom: 50px;
+}
+.catalog-filter-button {
+  width: 155px;
+  height: 38px;
+  background: #f1f1f1;
+  text-align: center;
+  border: 0;
+}
+.catalog-filter-button:hover {
+  background: #e5e5e5;
+}
+.catalog-filter-button:active {
+  background: #d5d5d5;
+}
 .catalog-list {
   float: right;
-  width: 560px;
+  width: 560px;   
+  margin-top: 165px;
 }
 .catalog-selection  ul {
   list-style: none; 
@@ -244,7 +282,7 @@ fieldset {
 } 
 .catalog-selection li:last-child {
   margin-right: 0;
-}
+}  
 .catalog-item {
   position: relative; 
   display: inline-block;
@@ -253,17 +291,20 @@ fieldset {
   height: 270px;
   overflow: hidden;
   margin-left: 80px;
-  margin-bottom: 80px;
+  margin-bottom: 80px; 
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;  
+  -moz-box-sizing: border-box; 
   box-sizing: border-box;
   padding-top: 30px;
   background-color: #f1f1f1;
   border-radius: 5px 5px 0 0;
-  cursor: pointer;
+  /*cursor: pointer;*/
   -webkit-transition: background-color .3s linear;
-  /*-o-transition: background-color .3s linear;  */
-  transition: background-color .3s linear; 
+  -o-transition: background-color .3s linear;  
+  transition: background-color .3s linear;
+}
+.catalog-item:last-child {
+  margin-right: 0;
 }
 .catalog-item:hover {
   background-color: #797979;
@@ -272,8 +313,8 @@ fieldset {
 .catalog-item:before {
   position: absolute;
   top: 10px;
-  content: '';
-  display: block;   
+  content: "";
+  display: block;
   width: 10px;
   height: 10px;
   background-color: #ffffff;
@@ -295,7 +336,7 @@ fieldset {
   position: absolute;
   top: 50px;
   left: 20px;
-  /*display: none; */
+  /*display: none;*/
   display: block;
   width: 200px;
   height: 200px;
@@ -313,14 +354,16 @@ fieldset {
 .catalog-item-description h3 {
   margin: 0;
   text-transform: uppercase;
-  font: 500 18px/24px;
+  font-size: 18px;
+  line-height: 24px;
   color: #000000;
 }
 .catalog-item-description p {
   height: 160px;
   overflow: hidden;
   margin: 12px 0 0 0;
-  font: 500 14px/18px;
+  font-size: 14px;
+  line-height: 18px;
   color: #283136;
 }
 .catalog-item-buy {
@@ -330,32 +373,36 @@ fieldset {
   display: block;
   width: 140px;
   height: 38px;
-  font: 500 18px/18px;
-  background-color: #fb565a;
+  font-size: 18px;
+  line-height: 18px;
+  background: #fb565a;
+  border: 0;
 }
 .catalog-item-buy:hover {
   background: #d6494d;
 }
-
+.catalog-item-buy:active {
+  background: #b63538;
+}
 .catalog-item:hover .catalog-item-description {
   /*display: block;*/
   opacity: 1;
 }
-.footer-map {
+	/*.footer-map {
   position: relative;
-}
+}  */
 .footer-map img {
   margin-bottom: 80px;
-}
+} 
 .footer-contacts {
-  position: absolute;
-  /*top: 330px; */
+ /* position: absolute;
+  /*top: 330px; 
   bottom: 280px;
-  left: 160px; 
-  width: 250px;
+  left: 160px; */
+  width: 250px; 
   min-height: 240px;
   background: #ffffff; 
-  border: 1px solid;
+  
 }
 .footer-contacts-text {
   font-size: 16px;
@@ -372,6 +419,22 @@ fieldset {
   padding-top: 30px;
 } 
 .callback-button {
+  /*position: absolute;
+  left: 100px;
+  bottom: -300px;*/
+  display: block;
+  width: 204px;
+  height: 38px;
+  font-size: 12px;
+  line-height: 18px;
+  background: #fb565a;
+  color: #ffffff;
+  margin-left: 23px;
+  margin-right: 23px;
+  margin-bottom: 23px;
+  text-align: center;
+  
+ /*border: 0;
   width: 204px;
   height: 38px;
   background: #fb565a;
@@ -379,7 +442,8 @@ fieldset {
   padding: 16px 54px;
   margin-left: 23px;
   margin-right: 23px;
-  margin-bottom: 23px; 
+  margin-bottom: 23px; */
+  
 }
 .footer-social {
   float: left;
@@ -394,10 +458,6 @@ fieldset {
   font-size: 36px;
   line-height: 36px;
 }
-/*
-.footer-slogan {
-  
-}  */
 h1{
   font-size: 40px;
   text-align: center;
