@@ -1,23 +1,24 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", "Arial, sans-serif";     
+  font-family: "Roboto", "Arial", sans-serif;     
   font-size: 16px;
   line-height: 22px;
   color: #000000;
   background: #ffffff;
-  min-width: 900px;    /* минимальная ширина экрана*/ 
+ 
 }
-.main-header {
-  /*width: 1200px; */
+.header {                              /*содержимое хэдера*/
   min-height: 95px; 
   padding-top: 25px;
-  /*margin-bottom: 15px;  */
   background: #eeeeee; 
   text-transform: uppercase; 
 }
-.text-title {
-  text-transform: uppercase;  
+header,
+main,
+footer {
+  min-width: 900px;
+  width: 100%;
 }
 .clearfix::after {
   content: "";
@@ -29,7 +30,7 @@ body {
   padding: 0 10px;
   margin: 0 auto;
 }
-.main-navigation {
+.main-navigation {                     /* меню навигации*/
   float: left;
   width: 720px;
 }
@@ -59,7 +60,7 @@ body {
 .basket {
   float: right;
   width: 100px;
-  margin-top: 30px;
+  margin-top: 30px; 
   font-size: 14px;
   line-height: 30px; 
 }
@@ -71,19 +72,16 @@ a {
   line-height: 18px;
   text-transform: uppercase;
 }  
-.wrapper {
+.slider{                                    
   position: relative;
   height: 316px;
   background: #eeeeee;
   margin-bottom: 80px;
 }
-
-
-/*.slider-inner {} */
-.sliders {
+.sliders {                                  /*index: БЛОК - Слайдер*/
   display: none;  
 }
-.slider-controls {            /*круглые кнопки слайдера */
+.slider-controls {                          /*index: круглые кнопки слайдера */
   position: absolute;
   bottom: 85px;
   left: 50%;
@@ -105,22 +103,22 @@ a {
   border-radius: 50%;
   cursor: pointer;
 }
-.slide1:checked ~ .slider-controls label:nth-child(1),            /*переключение круглых кнопок слайдера */
+.slide1:checked ~ .slider-controls label:nth-child(1),      /*index: переключение круглых кнопок слайдера */
 .slide2:checked ~ .slider-controls label:nth-child(2),
 .slide3:checked ~ .slider-controls label:nth-child(3) { 
   background:#c1c1c1;
 }
 .slider-list {}
-.slider-item {                              /*все неактивные слайды не отображаются на экране */
+.slider-item {              /*index: все неактивные слайды не отображаются на экране */
   position: relative;
   display: none;
 }
-.slide1:checked ~ .slider-list .slider-item:nth-child(1),       /*переключение между слайдами */
+.slide1:checked ~ .slider-list .slider-item:nth-child(1),       /*index: переключение между слайдами */
 .slide2:checked ~ .slider-list .slider-item:nth-child(2),
 .slide3:checked ~ .slider-list .slider-item:nth-child(3) { 
   display: block;
 }
-.slider-item-image {             /*картинка слайда */
+.slider-item-image {               /*index:картинка слайда */
   position: absolute;
   right: 0;
   text-align: right;
@@ -128,7 +126,7 @@ a {
 .slider-item-image img {
   /*float: right;*/
 }
-.slider-item-text {              /*текст на слайде */
+.slider-item-text {              /*index: текст на слайде */
   position: absolute;
   top: 50px;
 }
@@ -141,9 +139,9 @@ a {
 }
 .slider-item-text p {
   padding: 5px 0;
-  color: #283136;
+  color: #283136;               
 }
-.slider-button {           /* кнопка */
+.slider-button {           /* index: кнопка на слайде*/
   margin-top: 22px;
   width: 240px;
   height: 38px;
@@ -151,7 +149,7 @@ a {
   color: #ffffff;
   padding: 16px 70px;
 }  
-.directions-item {
+.directions-item {                    /*index: БЛОК - Направления работ компании*/
   float: left;
   width: 240px;
   margin-right: 80px;
@@ -164,16 +162,16 @@ a {
   font-size: 15px;
   line-height: 22px;
 }
-.directions-item  h2 {
+.directions-item-title {
   font-size: 18px;
   line-height: 30px;
+  text-transform: uppercase;
 }
-.order-button {
-  
-}
-
-.description {
+.description {                                    /*index: БЛОК - Описание компании*/
   margin-bottom: 45px;
+}
+.description-title {
+  text-transform: uppercase;
 }
 .description .index-logo {
   float: right;
@@ -195,7 +193,7 @@ b {
   font-size: 36px;
   line-height: 36px;
 }
-.link-logo-img {
+.link-logo-img {                                /*index: БЛОК - Логотипы */
   display: inline-block;
   vertical-align: top;
   margin-right: 76px;
@@ -215,15 +213,25 @@ b {
 .link-logo img:last-child {
   margin-right: 0; 
 }  */
-.catalog-filter {
+.caption {
+  background: #eeeeee;
+  min-height: 208px;
+  margin-bottom: 80px;
+}
+.main-title {                                     /*inner: Название страницы*/
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.catalog-filter {                                /*inner: БЛОК - Фильтр каталога*/
   float: left;
-  margin-top: 165px;
   width: 240px;
   margin-right: 80px;
 } 
-/*fieldset {
+.sidebar fieldset {
   border-color: transparent;
-} */
+} 
 .sidebar-filter-value {
   padding: 0;
 } 
@@ -233,29 +241,46 @@ b {
 .sidebar-filter-features {
   padding: 0;
 }
-.scrolling {
+.scrolling {                                  /*inner: Фильтр каталога (стоимость)*/
   width: 240px;
   height: 80px;
   background: #f1f1f1;
   margin-top: 20px;
   margin-bottom: 15px;
-  
 }
-/*.scrolling-cell {
-  text-align: justify;
-} */
+.scrolling-cell {
+  position: relative;
+  height: 38px;
+}
+.scrolling-cell label {
+  /*width: 100px;      */  /* 100px*/
+  position: absolute;
+}
+.scrolling-cell  span{
+  /*margin-left: 10px; */
+  text-transform: uppercase;
+ }
 .scrolling-cell input {
   width: 80px;
   height: 38px;
   border: 0;
   text-align: center;
   background: #f1f1f1;
-  
+  margin-left: 10px;
+} 
+.scrolling-cell-from {
+  left: 0;                   /*0*/
+}
+.scrolling-cell-to {
+  right: 0;                   /*0*/  
 }
 .sidebar fieldset {
   margin-bottom: 50px;
 }
-.catalog-filter-button {
+.sidebar legend {
+  text-transform: uppercase;
+}
+.catalog-filter-button {                       /*inner: Кнопка фильтра каталога*/
   width: 155px;
   height: 38px;
   background: #f1f1f1;
@@ -268,29 +293,43 @@ b {
 .catalog-filter-button:active {
   background: #d5d5d5;
 }
-.catalog-list {
+.catalog-list {                           /*inner: БЛОК - список товара*/
   float: right;
   width: 560px;   
-  margin-top: 165px;
+  
+}
+.catalog-selection {                           /*inner: Панель сортировки*/
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 25px;
 }
 .catalog-selection  ul {
   list-style: none; 
+  padding: 0;
+  text-transform: uppercase;
 }
 .catalog-selection li {
   display: inline;
   margin-right: 40px;
+  
 } 
 .catalog-selection li:last-child {
   margin-right: 0;
-}  
-.catalog-item {
+} 
+.catalog-selection a {
+  text-decoration: underline;
+} 
+.catalog-items {                                  
+  font-size: 0;
+} 
+.catalog-item {                                /*inner: каротчка товара*/
   position: relative; 
   display: inline-block;
   vertical-align: top;
   width: 240px;
   height: 270px;
   overflow: hidden;
-  margin-left: 80px;
+  /*margin-left: 80px; */
   margin-bottom: 80px; 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; 
@@ -303,8 +342,8 @@ b {
   -o-transition: background-color .3s linear;  
   transition: background-color .3s linear;
 }
-.catalog-item:last-child {
-  margin-right: 0;
+.catalog-item:nth-child(2n) {
+  margin-left: 80px;
 }
 .catalog-item:hover {
   background-color: #797979;
@@ -332,7 +371,7 @@ b {
   width: 240px;
   height: 240px;
 }
-.catalog-item-description {
+.catalog-item-description {                          /*inner: Описание товара*/
   position: absolute;
   top: 50px;
   left: 20px;
@@ -366,7 +405,7 @@ b {
   line-height: 18px;
   color: #283136;
 }
-.catalog-item-buy {
+.catalog-item-buy {                            /*inner: Кнопка карточки товара*/
   position: absolute;
   left: 30px;
   bottom: 30px;
@@ -391,10 +430,14 @@ b {
 	/*.footer-map {
   position: relative;
 }  */
-.footer-map img {
+/*.footer-map img {                                        
   margin-bottom: 80px;
-} 
-.footer-contacts {
+} */
+.footer-map-container {
+  margin-bottom: 80px;
+
+}
+.footer-contacts {                               /*БЛОК на карте - с адресом и тел.*/
  /* position: absolute;
   /*top: 330px; 
   bottom: 280px;
@@ -404,7 +447,7 @@ b {
   background: #ffffff; 
   
 }
-.footer-contacts-text {
+.footer-contacts-text {                             
   font-size: 16px;
   line-height: 20px;
   padding-left: 23px;
@@ -418,7 +461,7 @@ b {
   text-transform: uppercase;
   padding-top: 30px;
 } 
-.callback-button {
+.callback-button {                               
   /*position: absolute;
   left: 100px;
   bottom: -300px;*/
@@ -445,30 +488,19 @@ b {
   margin-bottom: 23px; */
   
 }
-.footer-social {
+.footer-social-logo {                                /*Иконки*/
   float: left;
   width: 240px;
   height: 215px;
   margin-right: 80px;
 }
-.footer-social a {
+.footer-social-logo a {
   margin-right: 18px;
 }
-.footer-social b {
+.footer-social-logo b {
   font-size: 36px;
   line-height: 36px;
 }
-h1{
-  font-size: 40px;
-  text-align: center;
-  text-transform: uppercase;
-  
- 
-}
-/*h2{
-  font-size: 36px;
-  line-height: 36px;
-} */
 
 
 
