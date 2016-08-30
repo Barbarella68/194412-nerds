@@ -5,8 +5,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #000000;
- /* background: #ffffff; */
- 
+  /*background: #ffffff;*/
 }
 .wrapper {
   background: #ffffff;
@@ -35,6 +34,7 @@ footer {
   margin: 0 auto;
   box-sizing: border-box;
 }
+
 .main-navigation {                     /* меню навигации*/
   float: left;
   width: 720px;
@@ -52,10 +52,21 @@ footer {
 .main-navigation .index-logo:hover {
   background: none;
 }
+
 .main-navigation ul {
   list-style: none;
   margin-top: 30px;
+  
 }
+.main-navigation a:hover {
+  color: #fb565a;
+}
+.main-navigation a:active {
+  color: #8f8f8f;
+} 
+.main-navigation a {
+  color: #000000;
+}  
 .main-navigation li {
   display: inline;
   margin-right: 35px; 
@@ -67,8 +78,11 @@ footer {
   width: 100px;
   margin-top: 30px; 
   font-size: 14px;
-  line-height: 30px; 
+  line-height: 30px;
 }
+.package {
+  color: 000000;
+}   
 a {
   text-decoration: none;
 }
@@ -76,6 +90,7 @@ a {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
+  background: #fb565a;
 }  
 .slider{                                    
   position: relative;
@@ -150,7 +165,7 @@ a {
   margin-top: 22px;
   width: 240px;
   height: 38px;
-  background: #fb565a;
+/*  background: #fb565a;  */
   color: #ffffff;
   padding: 16px 70px;
 }  
@@ -172,6 +187,18 @@ a {
   line-height: 30px;
   text-transform: uppercase;
 }
+.order-button {
+  display: block;
+  width: 140px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+ /*background: #00ca74; */
+  text-align: center;
+  padding-top:10px;
+  padding-bottom: 10px;
+}  
 .description {                                    /*index: БЛОК - Описание компании*/
   margin-bottom: 45px;
 }
@@ -203,11 +230,11 @@ b {
   vertical-align: top;
   margin-right: 76px;
   margin-bottom: 115px;
-  
 }
 .link-logo-img:last-child {
   margin-right: 0;
 }
+
 /*.link-logo img {
   float: left;
   width: 240px;
@@ -301,9 +328,9 @@ b {
 .catalog-list {                           /*inner: БЛОК - список товара*/
   float: right;
   width: 560px;   
-  
-}
-.catalog-selection {                           /*inner: Панель сортировки*/
+} 
+.catalog-selection {
+ /* position: relative; */             /*надо*/           /*inner: Панель сортировки*/
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 25px;
@@ -323,10 +350,55 @@ b {
 } 
 .catalog-selection a {
   text-decoration: underline;
+  /*color: #000000; */       /*need*/
 } 
+/*.catalog-selection a:hover {
+  text-decoration: underline #00ca74;
+  color: #000000;
+}
+
+.triangle-down  {
+  position: absolute;
+  top: 5px;
+  left: 530px; 
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 11px solid #c1c1c1;
+}
+.triangle-down:hover {
+  border-top: 11px solid #c1c1c1;
+}
+.triangle-down:active {
+  border-top: 11px solid #000000;
+}
+.triangle-down:focus {
+  border-top: 11px solid #00ca74;
+}
+.triangle-up {
+  position: absolute; 
+  top: 5px;
+  left: 550px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 11px solid #c1c1c1;
+}
+.triangle-up:hover {
+  border-bottom: 11px solid #c1c1c1;
+}
+.triangle-up:active {
+  border-bottom: 11px solid #000000;
+}
+
+.triangle-down-active:focus {
+  border-bottom: 11px solid #00ca74;
+} */
 .catalog-items {                                  
   font-size: 0;
-} 
+}  
 .catalog-item {                                /*inner: каротчка товара*/
   position: relative; 
   display: inline-block;
@@ -433,18 +505,19 @@ b {
   opacity: 1;
 }
 /*.catalog-pageswitch-button {
+  display: inline-block;
   width: 38px;
-  height: 38px;
+  height: 28px;
   background: #eeeeee;
-  border: 1px solid;
+  color: #000000;
+  font-size: 12px;
+  line-height: 18px;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 10px;
   
-}*/
-/*.footer-map {
-  
-} */
-/*.footer-map img {                                        
-  margin-bottom: 80px;
-} */
+}  */
+
 
 .footer-map-container  {
   position: relative;
@@ -495,14 +568,14 @@ b {
   top: 30px;  */
   display: block;
   width: 204px;
-  height: 38px;
+  height: 18px;
   font-size: 12px;
   line-height: 18px;
-  background: #fb565a;
+/*  background: #fb565a;  */
   color: #ffffff;
   text-align: center;
-  /*margin-bottom: 25px;
-  padding-top: 10px; */
+  padding-top: 10px;
+  padding-bottom: 10px;     /* new*/
 }
 .footer-map-logotype {
   position: absolute;
@@ -568,7 +641,6 @@ margin-bottom: 200px;
  /* padding-bottom: 50px;
   padding-top: 55px; */ 
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7)
-  
 } 
 .modal-content-close {
   position: absolute;
@@ -668,6 +740,7 @@ margin-bottom: 200px;
   text-transform: uppercase;
   
 }
+
 
 
 
