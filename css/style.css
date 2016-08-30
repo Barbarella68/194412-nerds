@@ -330,7 +330,7 @@ b {
   width: 560px;   
 } 
 .catalog-selection {
- /* position: relative; */             /*надо*/           /*inner: Панель сортировки*/
+  position: relative;            /*надо*/           /*inner: Панель сортировки*/
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 25px;
@@ -350,9 +350,9 @@ b {
 } 
 .catalog-selection a {
   text-decoration: underline;
-  /*color: #000000; */       /*need*/
+  color: #000000;       /*need*/
 } 
-/*.catalog-selection a:hover {
+.catalog-selection a:hover {
   text-decoration: underline #00ca74;
   color: #000000;
 }
@@ -395,7 +395,7 @@ b {
 
 .triangle-down-active:focus {
   border-bottom: 11px solid #00ca74;
-} */
+} 
 .catalog-items {                                  
   font-size: 0;
 }  
