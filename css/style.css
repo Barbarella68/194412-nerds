@@ -5,8 +5,12 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #000000;
-  background: #ffffff;
+ /* background: #ffffff; */
  
+}
+.wrapper {
+  background: #ffffff;
+  width: 1200px;
 }
 .header {                              /*содержимое хэдера*/
   min-height: 95px; 
@@ -26,9 +30,10 @@ footer {
   clear: both;
 }
 .container {
-  width: 880px;
+  width: 900px;
   padding: 0 10px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 .main-navigation {                     /* меню навигации*/
   float: left;
@@ -427,44 +432,67 @@ b {
   /*display: block;*/
   opacity: 1;
 }
-	/*.footer-map {
-  position: relative;
-}  */
+/*.catalog-pageswitch-button {
+  width: 38px;
+  height: 38px;
+  background: #eeeeee;
+  border: 1px solid;
+  
+}*/
+/*.footer-map {
+  
+} */
 /*.footer-map img {                                        
   margin-bottom: 80px;
 } */
-.footer-map-container {
-  margin-bottom: 80px;
 
-}
+.footer-map-container  {
+  position: relative;
+  margin-bottom: 80px;
+  width: 1200px;
+  padding-left: 0;      /*почему??- потому-что у .container: padding 0 10px ?*/
+}  
 .footer-contacts {                               /*БЛОК на карте - с адресом и тел.*/
- /* position: absolute;
-  /*top: 330px; 
-  bottom: 280px;
-  left: 160px; */
+  position: absolute;
+  bottom: 88px;
+  left: 160px; 
   width: 250px; 
-  min-height: 240px;
-  background: #ffffff; 
-  
+  height: 240px;
+  background: #ffffff;
 }
-.footer-contacts-text {                             
+.footer-contacts-description {                             
   font-size: 16px;
   line-height: 20px;
-  padding-left: 23px;
+  padding: 27px 20px;
+ /* padding-left: 23px;
   padding-right: 23px;
   padding-top: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 30px; */
+  
 }
-.footer-contacts-text b {
+.footer-contacts-address {
+  height: 77px;
+   margin-bottom: 30px;
+}
+.footer-contacts-description b {
+  /*margin: 0;      */        /* А нужен ли здесь нулевой маргин? */
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-  padding-top: 30px;
+  /*padding-top: 30px;*/
 } 
+.footer-contacts-description  p {
+  /*height: 77px; */
+  font-size: 16px;
+  line-height: 20px;
+  color: #666666;
+ 
+  
+}
 .callback-button {                               
   /*position: absolute;
-  left: 100px;
-  bottom: -300px;*/
+  left: 0;
+  top: 30px;  */
   display: block;
   width: 204px;
   height: 38px;
@@ -472,10 +500,19 @@ b {
   line-height: 18px;
   background: #fb565a;
   color: #ffffff;
-  margin-left: 23px;
+  text-align: center;
+  /*margin-bottom: 25px;
+  padding-top: 10px; */
+}
+.footer-map-logotype {
+  position: absolute;
+  bottom: 113px;
+  left: 839px;
+}  
+ /* margin-left: 23px;
   margin-right: 23px;
   margin-bottom: 23px;
-  text-align: center;
+  text-align: center; */
   
  /*border: 0;
   width: 204px;
@@ -496,12 +533,141 @@ b {
 }
 .footer-social-logo a {
   margin-right: 18px;
-}
-.footer-social-logo b {
+} 
+.footer-slogan b {
   font-size: 36px;
   line-height: 36px;
+  
+}
+.footer-slogan p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+}
+.footer-slogan {
+  float: right;
+  width: 550px;
+}
+.footer-socials {
+margin-bottom: 200px;
+}
+.input-form {
+  margin-top: 50px;
+  margin-bottom: 55px;
+  
+} 
+.modal-content {
+  position: absolute;
+  left: 275px;
+  top: 1425px;
+  width: 460px;
+  height: 416px;
+  background: #ffffff;
+  padding-left: 80px;
+  padding-right: 90px;
+ /* padding-bottom: 50px;
+  padding-top: 55px; */ 
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7)
+  
+} 
+.modal-content-close {
+  position: absolute;
+  top: 5px;
+  left: 584px;
+  width: 41px;
+  height: 41px;
+  background: #fb565a;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  border: 0;
+  font-size: 0;
+  cursor: pointer;
+}
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  bottom: 18px;
+  width: 25px;
+  height: 5px;
+  background-color: #ffffff;
+  border-radius: 1px; 
+}
+.modal-content-close::before {
+ transform: rotate(45deg);
+}
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+.modal-data-name {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.modal-data-name:last-child {
+  margin-right: 0;
+} 
+.modal-data-email {
+  float: right;           
+  margin-bottom: 20px;
 }
 
+.modal-data span {
+  font-size: 16px;
+  line-height: 18px;
+}
+.modal-data  input[type="text"] {
+  width: 199px;                      
+  height: 34px;
+  margin-top: 10px;
+  /*margin: 0; */
+  padding-left: 15px;  
+  font-size: 12px;
+  line-height: 18px;
+  /*font-family: "Roboto", "Arial", sans-serif; */
+  color: #000000;
+  text-transform: uppercase;
+  border: 2px solid #d7dcde;
+  outline: none;
+  
+}
+
+.modal-dialog {
+  margin-bottom: 50px;
+}
+.modal-dialog  textarea {
+  width: 443px;
+  height: 102px;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  /*  font-family: "Roboto", "Arial", sans-serif; */
+  color: #000000;
+  text-transform: uppercase;
+  border: 2px solid #d7dcde;
+  outline: none;
+}  
+.modal-dialog span {
+  font-size: 16px;
+  line-height: 18px;
+  
+/*  font-family: inherit; */
+}
+.send-button {
+  width: 460px;
+  height: 38px;
+  font-size: 12px;
+  line-height: 18px;
+  background: #fb565a;
+  color: #ffffff;
+  border: 0;
+  text-transform: uppercase;
+  
+}
 
 
 

@@ -38,7 +38,7 @@
     </header>
     <main>                <!--container-->
       <div class="wrapper slider">
-        <div class="container sliders-inner">                <!--sliders-inner-->
+        <div class="container slider-container">                <!--sliders-inner-->
           <input class="sliders slide1" type="radio" id="slide1" name="point" checked>
           <input class="sliders slide2" type="radio" id="slide2" name="point">
           <input class="sliders slide3" type="radio" id="slide3" name="point">
@@ -151,15 +151,21 @@
     <footer>   <!--футер-->
       <div class="wrapper footer-map">
         <div class="container footer-map-container">
-          <a href="#"><img src="img/index/footer-map.png" width="1200" height="415" alt="Где мы находимся"></a>
-          <div class="footer-contacts">
-            <div class="footer-contacts-text">          
-            <b>Nёrd's Design Studio</b>    
-            <p>191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>    
-            <p>тел. +7 (812) 275-75-75</p>
-            </div>         
-            <a href="#" class="button  callback-button">Напишите нам</a>
+          <img src="img/index/footer-mapnew.png" width="1200" height="416" alt="Где мы находимся">
+          <div class="footer-contacts">   
+            <div class="footer-contacts-description">          
+              <b>Nёrds Design Studio</b>
+              <div class="footer-contacts-address">
+              <p>191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>    
+              <p>тел. +7 (812) 275-75-75</p>
+              </div>
+              <a href="#" class="button  callback-button">Напишите нам</a>
+            </div>
           </div>
+          <div class="footer-map-logotype">
+            <img src="img/index/marker-logotype.png" width="231" height="190" alt="Nёrds">
+          </div>
+          
         </div> 
         <div class="wrapper footer-socials">
           <div class="container footer-socials-container">
@@ -175,6 +181,31 @@
           </div>  
         </div>
       </div>          
-    </footer>    
+    </footer>
+    <div class="modal-content">  
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <form class="input-form clearfix" action="#" method="post">       
+        <p class="modal-data">        
+          <label class="modal-data-name">        
+            <span>Ваше имя:</span><br>        
+            <input type="text" name="name" placeholder="Представьтесь, пожалуйста"><br>      
+          </label>        
+        </p>        
+        <p class="modal-data">       
+          <label class="modal-data-email">      
+            <span>Ваш e-mail:</span><br>       
+            <input type="text" name="email" placeholder="Для отправки ответа"><br>      
+         </label>      
+        </p>      
+        <p class="modal-dialog">      
+          <label class="modal-dialog-text" for="message">
+            <span>Текст письма:</span><br>      
+            <textarea name="text" id="message" placeholder="В свободной форме"></textarea ><br>      
+          </label>      
+        </p>      
+        <button class="button send-button" type="submit">Отправить</button>          
+      </form>       
+    </div>
   </body>
 </html>
+<!--    -->
