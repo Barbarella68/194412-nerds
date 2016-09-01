@@ -5,8 +5,10 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #000000;
+  
   /*background: #ffffff;*/
 }
+
 .wrapper {
   background: #ffffff;
   width: 1200px; 
@@ -61,7 +63,7 @@ footer {
   padding: 0;
   list-style: none;
   margin-top: 30px;
-  
+  font-size: 0;
 }
 .main-navigation a:hover {
   color: #fb565a;
@@ -70,6 +72,7 @@ footer {
   color: #8f8f8f;
 } 
 .main-navigation a {
+  
   color: #000000;
 }  
 .main-navigation li {
@@ -172,7 +175,7 @@ a {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  margin-bottom: 15px;
+  padding-bottom: 15px;
   
 }
 .slider-item-text p {
@@ -183,12 +186,12 @@ a {
   color: #283136;               
 }
 .slider-button {           /* index: кнопка на слайде*/
-  margin-top: 22px;
+/*  margin-top: 22px; */
   width: 240px;
-  height: 38px;
-/*  background: #fb565a;  */
+  height: 18px;
   color: #ffffff;
-  padding: 16px 70px;
+  padding: 10px 70px;   /*16px 70px;*/
+ 
 }  
 .directions-item {                    /*index: БЛОК - Направления работ компании*/
   float: left;
@@ -414,13 +417,14 @@ a {
   list-style: none; 
   padding: 0;
   text-transform: uppercase;
+  font-size: 0;
 }
 .catalog-selection li {
   margin: 0;
   padding: 0;
   display: inline;
   margin-right: 40px;
-  
+  font-size: 12px;
 } 
 .catalog-selection li:last-child {
   margin-right: 0;
@@ -703,8 +707,8 @@ a {
   
 }
 .footer-social-logo {                       /*Иконки*/
-  display: inline-block;
-  vertical-align: top;  
+ /* display: inline-block;
+  vertical-align: top;  */
   float: left;
   width: 240px;
   height: 215px;
@@ -730,12 +734,79 @@ a {
   width: 550px;
 }
 .footer-socials {
-margin-bottom: 200px;
+  margin-bottom: 200px;
+}
+.sprite {
+  background-image: url("..img/index/sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+}
+.sprite-icon-basketnew {
+  width: 15px;
+  height: 15px;
+  background-position: -10px -10px;
+}
+.sprite-icon-facebooknew {
+  width: 12px;
+  height: 22px;
+  background-position: -10px -45px;
+}
+.sprite-icon-instagrammnew {
+  width: 21px;
+  height: 21px;
+  background-position: -10px -87px;
+}
+.sprite-icon-vknew {
+  width: 26px;
+  height: 15px;
+  background-position: -10px -128px;
+}
+.social-btn {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 62px;
+  height: 62px;
+  background-color: e1e1e1;
+  -moz-border-radius: 31px;
+  -webkit-border-radius: 31px;
+  border-radius: 31px;
+  border: 0;
+  font-size: 0;
+}
+.social-btn:hover {
+  background-color: #fb565a;
+}
+.social-btn:active {
+  background-color: #d6494d;
+}
+.social-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);  
+  background-image: url("../img/index/sprite.png");
+  background-repeat: no-repeat;
+}
+.social-btn-vk::before {
+  width: 26px;
+  height: 15px;
+  background-position: -10px -128px;
+}
+.social-btn-fb::before {
+  width: 12px;
+  height: 22px;
+  background-position: -10px -45px;
+}
+.social-btn-inst::before {
+  width: 21px;
+  height: 21px;
+  background-position: -10px -87px;
 }
 .input-form {
   margin-top: 50px;
   margin-bottom: 55px;
-  
 } 
 .modal-content {
   position: absolute;
@@ -746,8 +817,6 @@ margin-bottom: 200px;
   background: #ffffff;
   padding-left: 80px;
   padding-right: 90px;
- /* padding-bottom: 50px;
-  padding-top: 55px; */ 
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7)
 } 
 .modal-content-close {
