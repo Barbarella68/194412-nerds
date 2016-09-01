@@ -40,6 +40,7 @@ footer {
 .main-navigation {                     /* меню навигации*/
   float: left;
   width: 720px;
+  color: #000000;
 }
 .main-navigation .index-logo {
   float: left;
@@ -78,6 +79,11 @@ footer {
   margin-right: 35px; 
   font-size: 14px;
   line-height: 30px; 
+}
+.main-navigation. link-active {                  /*навигация пункт меню для индикации текущей страницы*/
+  text-decoration: underline;
+  color: #fb565a;
+  
 }
 .basket {
   float: right;
@@ -672,7 +678,9 @@ a {
   margin-bottom: 23px; */
   
 }
-.footer-social-logo {                                /*Иконки*/
+.footer-social-logo {                       /*Иконки*/
+  display: inline-block;
+  vertical-align: top;  
   float: left;
   width: 240px;
   height: 215px;
