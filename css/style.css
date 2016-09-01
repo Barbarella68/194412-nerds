@@ -165,10 +165,12 @@ a {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+  margin-bottom: 15px;
 }
 .slider-item-text p {
- /* margin: 0;
-  padding: 0; */
+  margin: 0;
+  padding: 0; 
+  margin-bottom: 30px;
   padding: 5px 0;
   color: #283136;               
 }
@@ -190,11 +192,12 @@ a {
   margin-right: 0;
 }
 .directions-item  p {
- /* margin: 0;
-  padding: 0;  */
+  margin: 0;
+  padding: 0; 
   font-size: 15px;
   line-height: 22px;
   color: #283136;
+  margin-bottom: 30px;
 }
 .directions-item-title {
   font-size: 18px;
@@ -301,6 +304,12 @@ a {
 .sidebar-filter-item {
   padding: 0;
 }
+.filter-item {
+  color: #283136;
+}
+.filter-features-text {
+  color: #283136;
+}
 .sidebar-filter-features {
   padding: 0;
 }
@@ -314,6 +323,7 @@ a {
 .scrolling-cell {
   position: relative;
   height: 38px;
+  
 }
 .scrolling-cell label {
   /*width: 100px;      */  /* 100px*/
@@ -322,6 +332,7 @@ a {
 .scrolling-cell  span{
   /*margin-left: 10px; */
   text-transform: uppercase;
+  color: #283136;
  }
 .scrolling-cell input {
   width: 80px;
@@ -330,6 +341,7 @@ a {
   text-align: center;
   background: #f1f1f1;
   margin-left: 10px;
+  color: #283136;
 } 
 .scrolling-cell-from {
   left: 0;                   /*0*/
@@ -591,47 +603,39 @@ a {
 }  
 .footer-contacts {                               /*БЛОК на карте - с адресом и тел.*/
   position: absolute;
-  bottom: 88px;
+  bottom: 88px;        /*92px?????*/
   left: 160px; 
   width: 250px; 
   height: 240px;
   background: #ffffff;
 }
 .footer-contacts-description {                             
- /* font-size: 16px;
-  line-height: 20px; */
-  padding: 27px 20px;
- /* padding-left: 23px;
+  padding-left: 23px;
   padding-right: 23px;
-  padding-top: 25px;
-  padding-bottom: 30px; */
+  padding-top: 30px;
+  padding-bottom: 25px;
   
 }
 .footer-contacts-address {
- /* height: 77px;  */
-  margin-bottom: 30px;
+  height: 77px; 
+  margin-bottom: 20px;
+  margin-top: 21px;
 }
 
 .footer-contacts-description b {
-  /*margin: 0;      */        /* А нужен ли здесь нулевой маргин? */
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-  
-  /*padding-top: 30px;*/
 } 
 .footer-contacts-description  p {
-  /*height: 77px; */
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
-  margin-top: 20px;
+  padding-bottom: 25px;
   font-size: 16px;
   line-height: 20px;
   color: #283136;
- 
-  
 }
+
 .callback-button {                               
   /*position: absolute;
   left: 0;
@@ -645,7 +649,7 @@ a {
   color: #ffffff;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 10px;     /* new*/
+  padding-bottom: 10px;     
 }
 .footer-map-logotype {
   position: absolute;
