@@ -398,11 +398,64 @@ a {
   padding: 0;
 }
 .filter-item {
+  position: relative;
+  padding-left: 44px;
+  cursor: pointer;
   color: #283136;
 }
-.filter-features-text {
-  color: #283136;
+.filter-item input[type="radio"] {
+  display: none;
 }
+.filter-item input[type="radio"] + .radio-indicator {
+  position:absolute;
+  top: -5px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #c1c1c1;
+  background: #ffffff;
+  cursor: pointer; 
+  border-radius: 50%;
+} 
+/*.filter-item input[type="radio"]
+     :checked + .radio-indicator
+     ::before,*/
+.filter-item input[type="radio"]
+     :checked + .radio-indicator::after {
+  content: "";
+  position: absolute;
+ /* top: 8px;  */
+  left: 30px;
+  width: 8px;
+  height: 8px;
+  background-color: #c1c1c1;
+  border-radius: 50%;  
+}
+/*.filter-features-text {
+  
+} */
+.filter-features {
+  position: relative;
+  padding-left: 44px;
+  cursor: pointer;
+  color: #283136;  
+}
+.filter-features input[type="checkbox"] {
+  display: none;
+}
+.filter-features input[type="checkbox"] +
+  .checkbox-indicator {
+  position:absolute;
+  top: -5px;
+  left: 0;  
+  width: 23px;
+  height: 23px;
+  border: 2px solid #c1c1c1;
+  background: #ffffff;
+  cursor: pointer; 
+  border-radius: 5px;
+  overflow: hidden;
+} 
 .sidebar-filter-features {
   padding: 0;
   width: 240px;
