@@ -86,18 +86,33 @@ footer {
 .main-navigation. link-active {                  /*навигация пункт меню для индикации текущей страницы*/
   text-decoration: underline;
   color: #fb565a;
-  
 }
-.basket {
+.package {
+  position: relative;
+  color: 000000;
   float: right;
-  width: 100px;
+  width: 68px;
   margin-top: 30px; 
   font-size: 14px;
   line-height: 30px;
 }
-.package {
-  color: 000000;
-}   
+.package:hover {
+  color: #fb565a;
+}
+.package:active {
+  color: #8f8f8f;
+} 
+/*.package::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  right:68px;
+  width: 35px;
+  height: 20px;
+  background: #ff0000;
+  background: #ff0000 url("img/index/spritenew.png") no-repeat; 
+}  */
+
 a {
   text-decoration: none;
 }
@@ -191,7 +206,8 @@ a {
   height: 18px;
   color: #ffffff;
   padding: 10px 70px;   /*16px 70px;*/
- 
+  border-radius: 5px;
+  overflow: hidden;
 }  
 .directions-item {                    /*index: БЛОК - Направления работ компании*/
   float: left;
@@ -234,6 +250,8 @@ a {
   text-align: center;
   padding-top:10px;
   padding-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
 }
  
 .description {                                  /*index: БЛОК - Описание компании*/  
@@ -257,9 +275,27 @@ a {
 .description .index-logo {
   float: right;
   position: relative;
-  top: -140px;         /* уточнить*/
+  top: -165px;         
   left: -40px;
 }
+.index-logo-year {
+  text-transform: uppercase;
+}
+.index-logo-year span{
+  position: relative;
+  bottom: 45px; 
+  left: 690px;
+  padding: 0 15px;  
+/*  z-index: 2;  */
+}
+/*.index-logo-year span::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #fb565a;
+  position: relative;
+  top: -12px;
+  z-index: 1;
+}  */
 .description-left {
   float: left;
   width: 480px;
@@ -280,6 +316,19 @@ a {
 .description-left p:last-child {
   margin-bottom: 0;
 }
+.description-left-text p {
+  padding: 0 36px;
+  z-index: 1;
+}
+.description-left-text p::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -12px;
+  left: -36px;
+  border-bottom: 2px solid #fb565a;
+  z-index: 2;
+}
 .description-right p {
   margin: 0;
   padding: 0;
@@ -289,16 +338,28 @@ a {
 .description-right p:last-child {
   margin-bottom: 0;
 }
-.link-logo-img {                                /*index: БЛОК - Логотипы */
-  display: inline-block;
-  vertical-align: top;
+.link-logo-img {                              /*index: БЛОК - Логотипы */
+  display: inline-block;            
+  vertical-align: top; 
   margin-right: 76px;
   margin-bottom: 120px;
+  
 }
 .link-logo-img:last-child {
   margin-right: 0;
 }
-
+.link-logo-img a { 
+  background: url("../img/index/glukhankonew.png");
+ /* display: block;  */
+  width: 240px;
+  height: 100px;
+  
+}
+.link-logo-img a:hover {
+  background: url("../img/index/glukhankonew2.png");
+  
+  
+}
 /*.link-logo img {
   float: left;
   width: 240px;
@@ -344,18 +405,45 @@ a {
 }
 .sidebar-filter-features {
   padding: 0;
-}
-.scrolling {                                  /*inner: Фильтр каталога (стоимость)*/
   width: 240px;
+}
+.scrolling { 
+  position: relative;                           /*inner: Фильтр каталога (стоимость)*/
   height: 80px;
   background: #f1f1f1;
   margin-top: 20px;
   margin-bottom: 15px;
+  padding: 0 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.scrolling .scale {
+  margin-top: 39px;
+  height: 2px;
+  background: #d7dcde; 
+}
+.scrolling .bar {
+  height: 2px;
+  background: #00ca74;
+}
+.scrolling .toggle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid white;
+  background: #ababab;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+.scrolling .max-toggle {
+  left: 145px;
 }
 .scrolling-cell {
   position: relative;
   height: 38px;
-  
 }
 .scrolling-cell label {
   /*width: 100px;      */  /* 100px*/
@@ -374,12 +462,14 @@ a {
   background: #f1f1f1;
   margin-left: 10px;
   color: #283136;
+  border-radius: 5px;
+  overflow: hidden;
 } 
 .scrolling-cell-from {
-  left: 0;                   /*0*/
+  left: 0;                   
 }
 .scrolling-cell-to {
-  right: 0;                   /*0*/  
+  right: 0;                  
 }
 .sidebar fieldset {
   margin-bottom: 50px;
@@ -393,6 +483,8 @@ a {
   background: #f1f1f1;
   text-align: center;
   border: 0;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .catalog-filter-button:hover {
   background: #e5e5e5;
@@ -671,19 +763,17 @@ a {
 }
 
 .callback-button {                               
-  /*position: absolute;
-  left: 0;
-  top: 30px;  */
   display: block;
   width: 204px;
   height: 18px;
   font-size: 12px;
   line-height: 18px;
-/*  background: #fb565a;  */
   color: #ffffff;
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 10px;     
+  padding-bottom: 10px; 
+  border-radius: 5px;
+  overflow: hidden;  
 }
 .footer-map-logotype {
   position: absolute;
@@ -705,61 +795,58 @@ a {
   margin-right: 23px;
   margin-bottom: 23px; */
   
-}
-.footer-social-logo {                       /*Иконки*/
- /* display: inline-block;
-  vertical-align: top;  */
+.footer-social-logo {                                /*Иконки*/
   float: left;
   width: 240px;
   height: 215px;
   margin-right: 80px;
 }
 .footer-social-logo a {
+  display: inline-block;
+  vertical-align: top;
   margin-right: 18px;
 } 
-.footer-slogan b {
+.footer-social-logo a {
+  margin-right: 0;
+}
+.footer-social-slogan b {
   font-size: 36px;
   line-height: 36px;
-  
 }
-.footer-slogan p {
+.footer-social-slogan p {
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
   color: #283136;
 }
-.footer-slogan {
-  float: right;
-  width: 550px;
-}
 .footer-socials {
   margin-bottom: 200px;
 }
 .sprite {
-  background-image: url("..img/index/sprite.png");
+  background-image: url("..img/index/spritenew.png");
   background-repeat: no-repeat;
   display: block;
 }
-.sprite-icon-basketnew {
+.sprite-icon-basket {
   width: 15px;
   height: 15px;
-  background-position: -10px -10px;
+  background-position: -5px -5px;
 }
 .sprite-icon-facebooknew {
   width: 12px;
   height: 22px;
-  background-position: -10px -45px;
+  background-position: -5px -30px;
 }
 .sprite-icon-instagrammnew {
   width: 21px;
   height: 21px;
-  background-position: -10px -87px;
+  background-position: -5px -62px;
 }
 .sprite-icon-vknew {
   width: 26px;
   height: 15px;
-  background-position: -10px -128px;
+  background-position: -5px -93px;
 }
 .social-btn {
   position: relative;
@@ -786,23 +873,23 @@ a {
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);  
-  background-image: url("../img/index/sprite.png");
+  background-image: url("../img/index/spritenew.png");
   background-repeat: no-repeat;
 }
 .social-btn-vk::before {
   width: 26px;
   height: 15px;
-  background-position: -10px -128px;
+  background-position: -5px -93px;
 }
 .social-btn-fb::before {
   width: 12px;
   height: 22px;
-  background-position: -10px -45px;
+  background-position: -5px -30px;
 }
 .social-btn-inst::before {
   width: 21px;
   height: 21px;
-  background-position: -10px -87px;
+  background-position: -5px -62px;
 }
 .input-form {
   margin-top: 50px;
@@ -915,7 +1002,8 @@ a {
   color: #ffffff;
   border: 0;
   text-transform: uppercase;
-  
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 
