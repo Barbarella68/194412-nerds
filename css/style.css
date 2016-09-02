@@ -42,7 +42,7 @@ footer {
 .main-navigation {                     /* меню навигации*/
   float: left;
   width: 720px;
-  color: #000000;
+ /* color: #000000;  */
 }
 .main-navigation .index-logo {
   float: left;
@@ -72,7 +72,6 @@ footer {
   color: #8f8f8f;
 } 
 .main-navigation a {
-  
   color: #000000;
 }  
 .main-navigation li {
@@ -198,13 +197,15 @@ a {
   padding: 0; 
   margin-bottom: 30px;
   padding: 5px 0;
-  color: #283136;               
+  color: #283136;
 }
 .slider-button {           /* index: кнопка на слайде*/
 /*  margin-top: 22px; */
   width: 240px;
   height: 18px;
   color: #ffffff;
+  font-size: 12px;
+  line-height: 18px;
   padding: 10px 70px;   /*16px 70px;*/
   border-radius: 5px;
   overflow: hidden;
@@ -225,13 +226,15 @@ a {
   margin: 0;
   padding: 0; 
   font-size: 15px;
-  line-height: 22px;
+ /* line-height: 22px; */
   color: #283136;
   padding-bottom: 27px; 
 }
 .directions-item  h2 {
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  line-height: 30px;
   padding-bottom: 27px;
 }
 .directions-item-title {
@@ -270,7 +273,6 @@ a {
 }
 .description-container span {
   color: #283136;
-  
 }
 .description .index-logo {
   float: right;
@@ -343,7 +345,6 @@ a {
   vertical-align: top; 
   margin-right: 76px;
   margin-bottom: 120px;
-  
 }
 .link-logo-img:last-child {
   margin-right: 0;
@@ -353,12 +354,9 @@ a {
  /* display: block;  */
   width: 240px;
   height: 100px;
-  
 }
 .link-logo-img a:hover {
   background: url("../img/index/glukhankonew2.png");
-  
-  
 }
 /*.link-logo img {
   float: left;
@@ -390,13 +388,29 @@ a {
 } 
 .sidebar fieldset {
   border-color: transparent;
+  margin-bottom: 50px;
 } 
 .sidebar-filter-value {
   padding: 0;
 } 
 .sidebar-filter-item {
   padding: 0;
+  line-height: 20px;
 }
+.sidebar-filter-features {
+  padding: 0;
+  width: 240px;
+  line-height: 20px;
+}
+/*.sidebar fieldset {
+  margin-bottom: 50px;
+}  */
+.sidebar legend {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+}
+
 .filter-item {
   position: relative;
   padding-left: 44px;
@@ -420,12 +434,14 @@ a {
 /*.filter-item input[type="radio"]
      :checked + .radio-indicator
      ::before,*/
+	 
+	 
 .filter-item input[type="radio"]
      :checked + .radio-indicator::after {
   content: "";
   position: absolute;
  /* top: 8px;  */
-  left: 30px;
+ /* left: 30px; */
   width: 8px;
   height: 8px;
   background-color: #c1c1c1;
@@ -456,10 +472,7 @@ a {
   border-radius: 5px;
   overflow: hidden;
 } 
-.sidebar-filter-features {
-  padding: 0;
-  width: 240px;
-}
+
 .scrolling { 
   position: relative;                           /*inner: Фильтр каталога (стоимость)*/
   height: 80px;
@@ -524,12 +537,7 @@ a {
 .scrolling-cell-to {
   right: 0;                  
 }
-.sidebar fieldset {
-  margin-bottom: 50px;
-}
-.sidebar legend {
-  text-transform: uppercase;
-}
+
 .catalog-filter-button {                       /*inner: Кнопка фильтра каталога*/
   width: 155px;
   height: 38px;
@@ -770,8 +778,24 @@ a {
   text-align: center;
   padding-top: 10px;
   margin-bottom: 80px;
+  border-radius: 5px;
+  overflow: hidden;
 }  
-
+.catalog-pageswitch-buttonnext {
+  display: inline-block;
+  width: 140px;
+  height: 28px;
+  background: #eeeeee;
+  color: #000000;
+  font-size: 12px;
+  line-height: 18px;
+  margin-right: 10px;
+  text-align: center;
+  padding-top: 10px;
+  margin-bottom: 80px;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
 .footer-map-container  {
   position: relative;
@@ -802,7 +826,7 @@ a {
 }
 
 .footer-contacts-description b {
-  font-size: 16px;
+ /* font-size: 16px; */
   line-height: 30px;
   text-transform: uppercase;
 } 
@@ -810,7 +834,7 @@ a {
   margin: 0;
   padding: 0;
   padding-bottom: 25px;
-  font-size: 16px;
+ /* font-size: 16px; */
   line-height: 20px;
   color: #283136;
 }
@@ -869,8 +893,8 @@ a {
 .footer-social-slogan p {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 22px;
+ /* font-size: 16px;
+  line-height: 22px; */
   color: #283136;
 }
 .footer-socials {
