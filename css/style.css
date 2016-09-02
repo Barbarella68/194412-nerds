@@ -5,10 +5,8 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #000000;
-  
   /*background: #ffffff;*/
 }
-
 .wrapper {
   background: #ffffff;
   width: 1200px; 
@@ -38,29 +36,30 @@ footer {
   margin: 0 auto;
   box-sizing: border-box;
 }
-
-.main-navigation {                     /* меню навигации*/
+.main-navigation {    /* меню навигации*/
+  position: relative;                    
   float: left;
   width: 720px;
- /* color: #000000;  */
 }
-.main-navigation .index-logo {
-  float: left;
+.index-logotype {
+  position: absolute;
+ /* bottom: 15px; */
+ /* float: left; */
   width: 140px;
   height: 55px;
   margin-right: 180px;
 }
-.main-navigation .index-logo img {
-  width: 139px;        /*  разные размеры 140*55 см.выше   */
+.index-logotype img {
+  width: 139px;        
   height: 56px;
 }
-.main-navigation .index-logo:hover {
+.index-logotype:hover {
   background: none;
 }
-
 .main-navigation ul {
   margin: 0;
   padding: 0;
+  margin-left: 320px; 
   list-style: none;
   margin-top: 30px;
   font-size: 0;
@@ -82,13 +81,16 @@ footer {
   font-size: 14px;
   line-height: 30px; 
 }
+.main-navigation li:last-child{
+  margin-right: 0;
+}
 .main-navigation. link-active {                  /*навигация пункт меню для индикации текущей страницы*/
   text-decoration: underline;
   color: #fb565a;
 }
 .package {
   position: relative;
-  color: 000000;
+  color: #000000;
   float: right;
   width: 68px;
   margin-top: 30px; 
@@ -249,20 +251,57 @@ a {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
- /*background: #00ca74; */
+  /*background: #00ca74;*/ 
   text-align: center;
   padding-top:10px;
   padding-bottom: 10px;
   border-radius: 5px;
   overflow: hidden;
 }
- 
+.second {
+  background: #00ca74;
+}
+.third {
+  background: #efc84a;
+}
+/*.order-button2 {
+  display: block;
+  width: 140px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  background: #00ca74; 
+  text-align: center;
+  padding-top:10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.order-button3 {
+  display: block;
+  width: 140px;
+  height: 18px;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  background: #efc84a; 
+  text-align: center;
+  padding-top:10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}  */
 .description {                                  /*index: БЛОК - Описание компании*/  
   margin-bottom: 115px;
 }                               
-
 .description-title {
+ /* display: inline-block; */
   text-transform: uppercase;
+}
+
+.description-container {
+  position: relative;
 }
 .description-container p {
   margin-bottom: 15px;
@@ -273,12 +312,14 @@ a {
 }
 .description-container span {
   color: #283136;
+  display: inline-block;
+  width: 578px;
 }
-.description .index-logo {
+.index-logo {
   float: right;
-  position: relative;
-  top: -165px;         
-  left: -40px;
+  position: absolute;
+  bottom: 80px;       
+  left: 670px; 
 }
 .index-logo-year {
   text-transform: uppercase;
@@ -306,9 +347,8 @@ a {
 .description-right {
   float: right;
   width: 260px;
-  margin-top: -30px; 
+  margin-top: 50px;
  }
-
 .description-left p {
   margin: 0;
   padding: 0;
@@ -319,10 +359,13 @@ a {
   margin-bottom: 0;
 }
 .description-left-text p {
-  padding: 0 36px;
-  z-index: 1;
+ /* border-top: 2px silid #fb565a;
+  margin-left: 0;
+  padding-left: 10px;*/
+  padding: 0 37px;
+ /* z-index: 1; */
 }
-.description-left-text p::after {
+/*.description-left-text p::after {
   content: "";
   display: block;
   position: relative;
@@ -330,7 +373,7 @@ a {
   left: -36px;
   border-bottom: 2px solid #fb565a;
   z-index: 2;
-}
+}*/
 .description-right p {
   margin: 0;
   padding: 0;
@@ -770,7 +813,7 @@ a {
   display: inline-block;
   width: 38px;
   height: 28px;
-  background: #eeeeee;
+  background: #f1f1f1;
   color: #000000;
   font-size: 12px;
   line-height: 18px;
@@ -780,7 +823,15 @@ a {
   margin-bottom: 80px;
   border-radius: 5px;
   overflow: hidden;
-}  
+} 
+.catalog-pageswitch-button:hover {
+  background: #e5e5e5;
+} 
+.catalog-pageswitch-button:active {
+  background: #d5d5d5;
+  border-top: 3px solid #b5b5b5;
+  height: 25px;
+} 
 .catalog-pageswitch-buttonnext {
   display: inline-block;
   width: 140px;
@@ -796,7 +847,14 @@ a {
   border-radius: 5px;
   overflow: hidden;
 }
-
+.catalog-pageswitch-buttonnext:hover {
+  background: #e5e5e5;
+}
+.catalog-pageswitch-buttonnext:active {
+  background: #d5d5d5;
+  border-top: 3px solid #b5b5b5;
+  height: 25px;
+}  
 .footer-map-container  {
   position: relative;
   margin-bottom: 80px;
@@ -931,7 +989,7 @@ a {
   vertical-align: top;
   width: 62px;
   height: 62px;
-  background-color: e1e1e1;
+  background-color: #e1e1e1; 
   -moz-border-radius: 31px;
   -webkit-border-radius: 31px;
   border-radius: 31px;
@@ -974,6 +1032,7 @@ a {
 } 
 .modal-content {
   position: absolute;
+  display: none; 
   left: 275px;
   top: 1660px;   
   width: 460px;
@@ -983,6 +1042,9 @@ a {
   padding-right: 90px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7)
 } 
+.modal-content-show {
+  display: block;
+}
 .modal-content-close {
   position: absolute;
   top: 5px;
