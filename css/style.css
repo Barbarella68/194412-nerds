@@ -35,12 +35,12 @@ footer {
   margin: 0 auto;
   box-sizing: border-box;
 }
-.main-navigation {    /* меню навигации*/
+.main-navigation {                          /* меню навигации*/
   position: relative;                    
   float: left;
   width: 720px;
 }
-.index-logotype {
+.index-logotype {                            /*хэдер - логотип*/
   position: absolute;
   width: 140px;
   height: 55px;
@@ -53,7 +53,7 @@ footer {
 .index-logotype:hover {
   background: none;
 }
-.main-navigation ul {
+.main-navigation ul {                           
   margin: 0;
   padding: 0;
   margin-left: 320px; 
@@ -72,9 +72,9 @@ footer {
   text-decoration: none;
 }  
 .main-navigation li {
+  display: inline;
   margin: 0;
   padding: 0;
-  display: inline;
   margin-right: 35px; 
   font-size: 14px;
   line-height: 30px; 
@@ -82,9 +82,10 @@ footer {
 .main-navigation li:last-child{
   margin-right: 0;
 }
-.link-active {                  /*навигация пункт меню для индикации текущей страницы*/
-  text-decoration: none;
+.link-active {                   /*навигация пункт меню для индикации текущей страницы*/
   position: relative;
+  text-decoration: none;
+  
 }
 .link-active::after {
   content: "";
@@ -92,34 +93,44 @@ footer {
   text-decoration: underline;
   background-color: #fb565a;
 }
-.package {
+.package {                                   /*хэдер - корзина*/
   position: relative;
   color: #000000;
-  float: right;
-  width: 68px;
+  float: right; 
+  width: 65px;
+  padding-left: 35px;
   margin-top: 30px; 
   font-size: 14px;
   line-height: 30px;
-  text-decoration: none;
+  text-decoration: none;  
 }
 .package:hover {
   color: #fb565a;
 }
 .package:active {
   color: #8f8f8f;
-} 
-/*.package::before {
+}
+.package::before {
   content: "";
   position: absolute;
-  top: 6px;
-  right:68px;
-  width: 35px;
-  height: 20px;
-  background: #ff0000;
-  background: #ff0000 url("img/index/spritenew.png") no-repeat; 
-}  */
-
-
+  left: 5px;
+  top: 8px;
+  width: 15px;
+  height: 15px;
+  background: transparent url("../img/index/spritenew.png") no-repeat;
+  background-position: -5px -5px;
+  opacity: 0.3;  
+}
+.package:hover::before {
+  background: transparent url("../img/index/spritehover.png") no-repeat;
+  background-position: -5px -5px;
+  opacity: 1;
+} 
+.package:active::before {
+  background: transparent url("../img/index/spritenew.png") no-repeat;
+  background-position: -5px -5px;
+  opacity: 0.15;
+}
 .button {
   font-size: 12px;
   line-height: 18px;
@@ -127,7 +138,7 @@ footer {
   background: #fb565a;
   text-decoration: none;
 }
-.slider-container  {
+.slider-container  {                          /*index: БЛОК - Слайдер*/
   height: 316px;
 }
 .slider{                                    
@@ -136,7 +147,7 @@ footer {
   background: #eeeeee;
   margin-bottom: 80px;
 }
-.sliders {                                  /*index: БЛОК - Слайдер*/
+.sliders {                                  
   display: none;  
 }
 .slider-controls {                          /*index: круглые кнопки слайдера */
@@ -254,12 +265,41 @@ footer {
   border-radius: 5px;
   overflow: hidden;
 }
+
+.first {
+  background: #fb565a;
+}
+.first:hover {
+  background: #d6494d;
+}
+.first:active {
+  background: #b63538;
+  border-top: 3px solid #9b2d30;
+  height: 15px;
+}
 .second {
   background: #00ca74;
+}
+.second:hover {
+  background: #01a25e;
+}
+.second:active {
+  background: #009053;
+  border-top: 3px solid #007b47;
+  height: 15px;
 }
 .third {
   background: #efc84a;
 }
+.third:hover {
+  background: #d6ae2c;
+}
+.third:active {
+  background: #c09b24;
+  border-top: 3px solid #a3841f;
+  height: 15px;
+}
+ 
 .description {                                  /*index: БЛОК - Описание компании*/  
   margin-bottom: 115px;
 }                               
@@ -279,13 +319,13 @@ footer {
   word-wrap: break-word;
 }
 .description-container span {
-  color: #283136;
   display: inline-block;
+  color: #283136;
   width: 578px;  
 }
 .index-logo {
-  float: right;
   position: absolute;
+  float: right;
   bottom: 80px;       
   left: 680px; 
 }
@@ -326,22 +366,6 @@ footer {
 .description-left p:last-child {
   margin-bottom: 0;
 }
-.description-left-text p {
- /* border-top: 2px silid #fb565a;
-  margin-left: 0;
-  padding-left: 10px;*/
-  padding: 0 37px;
- /* z-index: 1; */
-}
-/*.description-left-text p::after {
-  content: "";
-  display: block;
-  position: relative;
-  top: -12px;
-  left: -36px;
-  border-bottom: 2px solid #fb565a;
-  z-index: 2;
-}*/
 .description-right p {
   margin: 0;
   padding: 0;
@@ -356,6 +380,13 @@ footer {
   vertical-align: top; 
   margin-right: 76px;
   margin-bottom: 120px;
+  opacity: 0.2;
+}
+.link-logo-img:hover {
+  opacity: 1;
+}
+.link-logo-img:active {
+  opacity: 1;
 }
 .link-logo-img:last-child {
   margin-right: 0;
@@ -570,10 +601,28 @@ footer {
 .catalog-selection li:last-child {
   margin-right: 0;
 }
-.catalog-selection  span {        /*span*/
+.catalog-selection  span {        
+  color: #000000;
+}
+.catalog-selection a {
+  color: #c7c7c7; 
+  text-decoration: none;
+  border-bottom: 1px dashed #00ca74;
+}
+.catalog-selection a:hover {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #00ca74;
+}
+.catalog-selection a:active {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: none;
+}
+/*.catalog-selection  span {        
   color: #c7c7c7;
 }
-.catalog-selection  span:hover{        /*span*/
+.catalog-selection  span:hover{        
   color: #000000;
 }
 .catalog-selection a {
@@ -591,7 +640,7 @@ footer {
   color: #ffffff;
   border-bottom: none;
 }
-
+*/
 /*.catalog-selection a:hover:before {
   color: #000000;
   text-decoration: underline;
@@ -749,52 +798,43 @@ footer {
 .catalog-item:hover .catalog-item-description {
   opacity: 1;
 }
-.catalog-pageswitch-button {
+.catalog-pageswitch {
+  width: 284px;
+  white-space: nowrap;
+  margin-bottom: 80px;
+}
+.catalog-pageswitch a {
   display: inline-block;
-  width: 38px;
-  height: 28px;
+  min-width: 8px;
+  height: 38x;
+  padding: 0 15px; 
+  font-size: 12px;
+  line-height: 38px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
   background: #f1f1f1;
-  color: #000000;
-  font-size: 12px;
-  line-height: 18px;
-  margin-right: 10px;
-  text-align: center;
-  padding-top: 10px;
-  margin-bottom: 80px;
   border-radius: 5px;
-  overflow: hidden;
-} 
-.catalog-pageswitch-button:hover {
-  background: #e5e5e5;
-} 
-.catalog-pageswitch-button:active {
-  background: #d5d5d5;
-  border-top: 3px solid #b5b5b5;
-  height: 25px;
-} 
-.catalog-pageswitch-buttonnext {
-  display: inline-block;
-  width: 140px;
-  height: 28px;
-  background: #eeeeee;
-  color: #000000;
-  font-size: 12px;
-  line-height: 18px;
+  overflow: hidden; 
   margin-right: 10px;
-  text-align: center;
-  padding-top: 10px;
-  margin-bottom: 80px;
-  border-radius: 5px;
-  overflow: hidden;
 }
-.catalog-pageswitch-buttonnext:hover {
+.catalog-pageswitch a:last-child {
+  margin-right: 0;
+}
+.page-current  {
+  border: 1px solid #f1f1f1;
+  background-color: #ffffff;
+}
+.page-disabled:hover {
   background: #e5e5e5;
 }
-.catalog-pageswitch-buttonnext:active {
+.page-disabled:active {
   background: #d5d5d5;
   border-top: 3px solid #b5b5b5;
-  height: 25px;
-}  
+  height: 35px;
+}
 .footer-map-container  {
   position: relative;
   margin-bottom: 80px;
@@ -918,7 +958,7 @@ footer {
   width: 26px;
   height: 15px;
   background-position: -5px -93px;
-}
+} 
 .social-btn {
   position: relative;
   display: inline-block;
@@ -944,23 +984,23 @@ footer {
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);  
-  background-image: url("../img/index/spritenew.png");
+  background-image: url("../img/index/sprite.png");
   background-repeat: no-repeat;
 }
 .social-btn-vk::before {
   width: 26px;
   height: 15px;
-  background-position: -5px -93px;
+  background-position: -10px -128px;
 }
 .social-btn-fb::before {
   width: 12px;
   height: 22px;
-  background-position: -5px -30px;
+  background-position: -10px -45px;
 }
 .social-btn-inst::before {
   width: 21px;
   height: 21px;
-  background-position: -5px -62px;
+  background-position: -10px -87px;
 }
 .input-form {
   margin-top: 50px;
