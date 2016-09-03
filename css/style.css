@@ -35,12 +35,12 @@ footer {
   margin: 0 auto;
   box-sizing: border-box;
 }
-.main-navigation {                          /* меню навигации*/
+.main-navigation {                          /*header: меню навигации*/
   position: relative;                    
   float: left;
   width: 720px;
 }
-.index-logotype {                            /*хэдер - логотип*/
+.index-logotype {                            /*header: - логотип*/
   position: absolute;
   width: 140px;
   height: 55px;
@@ -93,7 +93,7 @@ footer {
   text-decoration: underline;
   background-color: #fb565a;
 }
-.package {                                   /*хэдер - корзина*/
+.package {                                   /*header:  - корзина*/
   position: relative;
   color: #000000;
   float: right; 
@@ -211,7 +211,7 @@ footer {
   padding: 5px 0;
   color: #283136; 
 }
-.slider-button {           /* index: кнопка на слайде*/
+.slider-button {                     /* index: кнопка на слайде*/
   width: 240px;
   height: 18px;
   color: #ffffff;
@@ -252,7 +252,7 @@ footer {
   line-height: 30px;
   text-transform: uppercase;
 }
-.order-button {
+.order-button {                               
   display: block;
   width: 140px;
   height: 18px;
@@ -417,11 +417,11 @@ footer {
   width: 240px;
   margin-right: 80px;
 } 
-.sidebar fieldset {
+.sidebar fieldset {                                   
   border-color: transparent;
   margin-bottom: 50px;
 } 
-.sidebar-filter-value {
+.sidebar-filter-value {                           
   padding: 0;
 } 
 .sidebar-filter-item {
@@ -438,66 +438,8 @@ footer {
   font-size: 18px;
   line-height: 30px;
 }
-.filter-item {
-  position: relative;
-  padding-left: 44px;
-  cursor: pointer;
-  color: #283136;
-}
-.filter-item input[type="radio"] {
-  display: none;
-}
-.filter-item input[type="radio"] + .radio-indicator {
-  position:absolute;
-  top: -5px;
-  left: 0;
-  width: 25px;
-  height: 25px;
-  border: 3px solid #c1c1c1;
-  background: #ffffff;
-  cursor: pointer; 
-  border-radius: 50%;
-} 
-/*.filter-item input[type="radio"]
-     :checked + .radio-indicator
-     ::before,*/
-	 
-	 
-.filter-item input[type="radio"]
-     :checked + .radio-indicator::after {
-  content: "";
-  position: absolute;
- /* top: 8px;  */
- /* left: 30px; */
-  width: 8px;
-  height: 8px;
-  background-color: #c1c1c1;
-  border-radius: 50%;  
-}
-.filter-features {
-  position: relative;
-  padding-left: 44px;
-  cursor: pointer;
-  color: #283136;  
-}
-.filter-features input[type="checkbox"] {
-  display: none;
-}
-.filter-features input[type="checkbox"] +
-  .checkbox-indicator {
-  position:absolute;
-  top: -5px;
-  left: 0;  
-  width: 23px;
-  height: 23px;
-  border: 2px solid #c1c1c1;
-  background: #ffffff;
-  cursor: pointer; 
-  border-radius: 5px;
-  overflow: hidden;
-} 
-.scrolling { 
-  position: relative;                           /*inner: Фильтр каталога (стоимость)*/
+.scrolling {                                      /*inner: Фильтр каталога -"стоимость"*/
+  position: relative;                           
   height: 80px;
   background: #f1f1f1;
   margin-top: 20px;
@@ -558,6 +500,65 @@ footer {
 .scrolling-cell-to {
   right: 0;                  
 }
+.filter-item {                                   /*inner: Фильтр каталога - radio button*/
+  position: relative;
+  padding-left: 44px;
+  cursor: pointer;
+  color: #283136;
+}
+.filter-item input[type="radio"] {
+  display: none;
+}
+.filter-item input[type="radio"] + .radio-indicator {
+  position:absolute;
+  top: -5px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border: 3px solid #c1c1c1;
+  background: #ffffff;
+  cursor: pointer; 
+  border-radius: 50%;
+} 
+/*.filter-item input[type="radio"]
+     :checked + .radio-indicator
+     ::before,*/
+	 
+	 
+.filter-item input[type="radio"]
+     :checked + .radio-indicator::after {
+  content: "";
+  position: absolute;
+ /* top: 8px;  */
+ /* left: 30px; */
+  width: 8px;
+  height: 8px;
+  background-color: #c1c1c1;
+  border-radius: 50%;  
+}
+.filter-features {                                   /*inner: Фильтр каталога - checkbox*/
+  position: relative;
+  padding-left: 44px;
+  cursor: pointer;
+  color: #283136;  
+}
+.filter-features input[type="checkbox"] {
+  display: none;
+}
+.filter-features input[type="checkbox"] +
+  .checkbox-indicator {
+  position:absolute;
+  top: -5px;
+  left: 0;  
+  width: 23px;
+  height: 23px;
+  border: 2px solid #c1c1c1;
+  background: #ffffff;
+  cursor: pointer; 
+  border-radius: 5px;
+  overflow: hidden;
+} 
+
 .catalog-filter-button {                       /*inner: Кнопка фильтра каталога*/
   width: 155px;
   height: 38px;
@@ -577,8 +578,8 @@ footer {
   float: right;
   width: 560px;   
 } 
-.catalog-selection {
-  position: relative;             /*inner: Панель сортировки*/
+.catalog-selection {                        /*inner: Панель сортировки*/ 
+  position: relative;                      
   font-size: 12px;
   line-height: 18px;
   margin-bottom: 25px;
@@ -619,40 +620,6 @@ footer {
   text-decoration: none;
   border-bottom: none;
 }
-/*.catalog-selection  span {        
-  color: #c7c7c7;
-}
-.catalog-selection  span:hover{        
-  color: #000000;
-}
-.catalog-selection a {
-  text-decoration: none;
-  color: #00ca74;
-  border-bottom: 1px dashed #00ca74;
-}
-.catalog-selection a:hover {
-  text-decoration: underline;
-  color: #00ca74;
-  border-bottom: none;
-} 
-.catalog-selection a:active {
-  text-decoration: none;
-  color: #ffffff;
-  border-bottom: none;
-}
-*/
-/*.catalog-selection a:hover:before {
-  color: #000000;
-  text-decoration: underline;
-  color: #00ca74;
-  
-} */
-/*.catalog-selection a:hover {
-  
-  text-decoration: underline;
-  color: #00ca74;
-}  */
-
 .triangle-down  {
   position: absolute;
   top: 5px;
@@ -694,7 +661,7 @@ footer {
 .catalog-items {                                  
   font-size: 0;
 }  
-.catalog-item {                                /*inner: каротчка товара*/
+.catalog-item {                                /*inner: карточка товара*/
   position: relative; 
   display: inline-block;
   vertical-align: top;
@@ -741,7 +708,7 @@ footer {
   width: 240px;
   height: 240px;
 }
-.catalog-item-description {                          /*inner: Описание товара*/
+.catalog-item-description {                          /*inner: Карточка товара - Описание товара*/
   position: absolute;
   top: 50px;
   left: 20px;
@@ -777,7 +744,7 @@ footer {
   line-height: 18px;
   color: #283136;
 }
-.catalog-item-buy {                            /*inner: Кнопка карточки товара*/
+.catalog-item-buy {                            /*inner: Карточка товара - кнопка*/
   position: absolute;
   left: 30px;
   bottom: 30px;
@@ -798,7 +765,7 @@ footer {
 .catalog-item:hover .catalog-item-description {
   opacity: 1;
 }
-.catalog-pageswitch {
+.catalog-pageswitch {                          /*inner: Пагинация*/
   width: 284px;
   white-space: nowrap;
   margin-bottom: 80px;
@@ -841,7 +808,7 @@ footer {
   width: 1200px;
   padding-left: 0;      
 }  
-.footer-contacts {                               /*БЛОК на карте - с адресом и тел.*/
+.footer-contacts {                               /*footer: БЛОК на карте - с адресом и тел.*/
   position: absolute;
   bottom: 88px;        /*92px?????*/
   left: 160px; 
@@ -859,10 +826,6 @@ footer {
   height: 77px; 
   margin-bottom: 20px;
   margin-top: 21px;
-}
-.footer-contacts-number {
-  color: #000000;
-  text-decoration: none;
 }
 .footer-contacts-description b {
   line-height: 30px;
@@ -888,27 +851,12 @@ footer {
   border-radius: 5px;
   overflow: hidden;  
 }
-.footer-map-logotype {
+.footer-map-logotype {                         /*footer: Логотип на карте */
   position: absolute;
   bottom: 113px;
   left: 839px;
 }  
- /* margin-left: 23px;
-  margin-right: 23px;
-  margin-bottom: 23px;
-  text-align: center; */
-  
- /*border: 0;
-  width: 204px;
-  height: 38px;
-  background: #fb565a;
-  color: #ffffff;
-  padding: 16px 54px;
-  margin-left: 23px;
-  margin-right: 23px;
-  margin-bottom: 23px; */
-  
-.footer-social-logo {                                /*Иконки*/
+.footer-social-logo {                             /*footer: Иконки -в контакте, фейсбук, инстаграмм*/
   float: left;
   width: 240px;
   height: 215px;
@@ -934,7 +882,7 @@ footer {
 .footer-socials {
   margin-bottom: 200px;
 }
-.sprite {
+.sprite {                                           /* Спрайт */
   background-image: url("..img/index/spritenew.png");
   background-repeat: no-repeat;
   display: block;
@@ -1007,7 +955,7 @@ footer {
   margin-bottom: 55px;
   font-family: "Roboto", "Arial", sans-serif;   
 } 
-.modal-content {
+.modal-content {                                  /*footer: Модальное окно */
   position: absolute;
   display: none; 
   left: 275px;
@@ -1081,6 +1029,13 @@ footer {
   border: 2px solid #d7dcde;
   outline: none;
 }
+.modal-data  input:hover {
+  border: 2px solid #a2a9ac;
+} 
+.modal-data  input:focus {
+  border: 2px solid #56bffb;
+}  
+
 .modal-dialog {
   margin-bottom: 50px;
 }
