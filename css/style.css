@@ -4,8 +4,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;     
   font-size: 16px;
   line-height: 22px;
-  color: #000000;
-  /*background: #ffffff;*/
+  color: #000000;  
 }
 .wrapper {
   background: #ffffff;
@@ -43,8 +42,6 @@ footer {
 }
 .index-logotype {
   position: absolute;
- /* bottom: 15px; */
- /* float: left; */
   width: 140px;
   height: 55px;
   margin-right: 180px;
@@ -72,6 +69,7 @@ footer {
 } 
 .main-navigation a {
   color: #000000;
+  text-decoration: none;
 }  
 .main-navigation li {
   margin: 0;
@@ -84,9 +82,15 @@ footer {
 .main-navigation li:last-child{
   margin-right: 0;
 }
-.main-navigation. link-active {                  /*навигация пункт меню для индикации текущей страницы*/
+.link-active {                  /*навигация пункт меню для индикации текущей страницы*/
+  text-decoration: none;
+  position: relative;
+}
+.link-active::after {
+  content: "";
+  position: absolute;
   text-decoration: underline;
-  color: #fb565a;
+  background-color: #fb565a;
 }
 .package {
   position: relative;
@@ -96,6 +100,7 @@ footer {
   margin-top: 30px; 
   font-size: 14px;
   line-height: 30px;
+  text-decoration: none;
 }
 .package:hover {
   color: #fb565a;
@@ -114,14 +119,13 @@ footer {
   background: #ff0000 url("img/index/spritenew.png") no-repeat; 
 }  */
 
-a {
-  text-decoration: none;
-}
+
 .button {
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
   background: #fb565a;
+  text-decoration: none;
 }
 .slider-container  {
   height: 316px;
@@ -177,13 +181,9 @@ a {
   right: 0;
   text-align: right;
 }
-.slider-item-image img {
-  /*float: right;*/
-}
 .slider-item-text {              /*index: текст на слайде */
   position: absolute;
-  top: 20px;
-  
+  top: 20px;  
 }
 .slider-item-text h2 {
   padding: 0;
@@ -191,24 +191,22 @@ a {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  padding-bottom: 15px;
-  
+  padding-bottom: 15px;  
 }
 .slider-item-text p {
   margin: 0;
   padding: 0; 
   margin-bottom: 30px;
   padding: 5px 0;
-  color: #283136;
+  color: #283136; 
 }
 .slider-button {           /* index: кнопка на слайде*/
-/*  margin-top: 22px; */
   width: 240px;
   height: 18px;
   color: #ffffff;
   font-size: 12px;
   line-height: 18px;
-  padding: 10px 70px;   /*16px 70px;*/
+  padding: 10px 70px;   
   border-radius: 5px;
   overflow: hidden;
 }  
@@ -228,7 +226,6 @@ a {
   margin: 0;
   padding: 0; 
   font-size: 15px;
- /* line-height: 22px; */
   color: #283136;
   padding-bottom: 27px; 
 }
@@ -251,7 +248,6 @@ a {
   font-size: 12px;
   line-height: 18px;
   color: #ffffff;
-  /*background: #00ca74;*/ 
   text-align: center;
   padding-top:10px;
   padding-bottom: 10px;
@@ -264,62 +260,34 @@ a {
 .third {
   background: #efc84a;
 }
-/*.order-button2 {
-  display: block;
-  width: 140px;
-  height: 18px;
-  font-size: 12px;
-  line-height: 18px;
-  color: #ffffff;
-  background: #00ca74; 
-  text-align: center;
-  padding-top:10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-}
-.order-button3 {
-  display: block;
-  width: 140px;
-  height: 18px;
-  font-size: 12px;
-  line-height: 18px;
-  color: #ffffff;
-  background: #efc84a; 
-  text-align: center;
-  padding-top:10px;
-  padding-bottom: 10px;
-  border-radius: 5px;
-  overflow: hidden;
-}  */
 .description {                                  /*index: БЛОК - Описание компании*/  
   margin-bottom: 115px;
 }                               
 .description-title {
- /* display: inline-block; */
-  text-transform: uppercase;
+ text-transform: uppercase;
 }
-
 .description-container {
   position: relative;
 }
 .description-container p {
   margin-bottom: 15px;
+  width: 578px;
 }
 .description-container b {
   font-size: 36px;
   line-height: 36px;
+  word-wrap: break-word;
 }
 .description-container span {
   color: #283136;
   display: inline-block;
-  width: 578px;
+  width: 578px;  
 }
 .index-logo {
   float: right;
   position: absolute;
   bottom: 80px;       
-  left: 670px; 
+  left: 680px; 
 }
 .index-logo-year {
   text-transform: uppercase;
@@ -327,7 +295,7 @@ a {
 .index-logo-year span{
   position: relative;
   bottom: 45px; 
-  left: 690px;
+  left: 700px;
   padding: 0 15px;  
 /*  z-index: 2;  */
 }
@@ -394,23 +362,12 @@ a {
 }
 .link-logo-img a { 
   background: url("../img/index/glukhankonew.png");
- /* display: block;  */
   width: 240px;
   height: 100px;
 }
 .link-logo-img a:hover {
   background: url("../img/index/glukhankonew2.png");
 }
-/*.link-logo img {
-  float: left;
-  width: 240px;
-  margin-right: 80px;
-  
-  margin-bottom: 115px;
-}
-.link-logo img:last-child {
-  margin-right: 0; 
-}  */
 .caption {
   background: #eeeeee;
   min-height: 208px;
@@ -445,15 +402,11 @@ a {
   width: 240px;
   line-height: 20px;
 }
-/*.sidebar fieldset {
-  margin-bottom: 50px;
-}  */
 .sidebar legend {
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
 }
-
 .filter-item {
   position: relative;
   padding-left: 44px;
@@ -469,7 +422,7 @@ a {
   left: 0;
   width: 25px;
   height: 25px;
-  border: 4px solid #c1c1c1;
+  border: 3px solid #c1c1c1;
   background: #ffffff;
   cursor: pointer; 
   border-radius: 50%;
@@ -490,9 +443,6 @@ a {
   background-color: #c1c1c1;
   border-radius: 50%;  
 }
-/*.filter-features-text {
-  
-} */
 .filter-features {
   position: relative;
   padding-left: 44px;
@@ -515,7 +465,6 @@ a {
   border-radius: 5px;
   overflow: hidden;
 } 
-
 .scrolling { 
   position: relative;                           /*inner: Фильтр каталога (стоимость)*/
   height: 80px;
@@ -555,11 +504,9 @@ a {
   height: 38px;
 }
 .scrolling-cell label {
-  /*width: 100px;      */  /* 100px*/
   position: absolute;
 }
 .scrolling-cell  span{
-  /*margin-left: 10px; */
   text-transform: uppercase;
   color: #283136;
  }
@@ -580,7 +527,6 @@ a {
 .scrolling-cell-to {
   right: 0;                  
 }
-
 .catalog-filter-button {                       /*inner: Кнопка фильтра каталога*/
   width: 155px;
   height: 38px;
@@ -606,7 +552,6 @@ a {
   line-height: 18px;
   margin-bottom: 25px;
 }
-
 .catalog-selection  ul {
   margin: 0;
   padding: 0;
@@ -625,7 +570,6 @@ a {
 .catalog-selection li:last-child {
   margin-right: 0;
 }
-
 .catalog-selection  span {        /*span*/
   color: #c7c7c7;
 }
@@ -647,6 +591,7 @@ a {
   color: #ffffff;
   border-bottom: none;
 }
+
 /*.catalog-selection a:hover:before {
   color: #000000;
   text-decoration: underline;
@@ -694,7 +639,6 @@ a {
 .triangle-up:active {
   border-bottom: 11px solid #000000;
 }
-
 .triangle-down-active:focus {
   border-bottom: 11px solid #00ca74;
 } 
@@ -708,7 +652,6 @@ a {
   width: 240px;
   height: 270px;
   overflow: hidden;
-  /*margin-left: 80px; */
   margin-bottom: 80px; 
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box; 
@@ -716,7 +659,6 @@ a {
   padding-top: 30px;
   background-color: #f1f1f1;
   border-radius: 5px 5px 0 0;
-  /*cursor: pointer;*/
   -webkit-transition: background-color .3s linear;
   -o-transition: background-color .3s linear;  
   transition: background-color .3s linear;
@@ -754,7 +696,6 @@ a {
   position: absolute;
   top: 50px;
   left: 20px;
-  /*display: none;*/
   display: block;
   width: 200px;
   height: 200px;
@@ -806,7 +747,6 @@ a {
   background: #b63538;
 }
 .catalog-item:hover .catalog-item-description {
-  /*display: block;*/
   opacity: 1;
 }
 .catalog-pageswitch-button {
@@ -859,8 +799,7 @@ a {
   position: relative;
   margin-bottom: 80px;
   width: 1200px;
-    
-  padding-left: 0;      /*почему??- потому-что у .container: padding 0 10px ?*/
+  padding-left: 0;      
 }  
 .footer-contacts {                               /*БЛОК на карте - с адресом и тел.*/
   position: absolute;
@@ -875,16 +814,17 @@ a {
   padding-right: 23px;
   padding-top: 30px;
   padding-bottom: 25px;
-  
 }
 .footer-contacts-address {
   height: 77px; 
   margin-bottom: 20px;
   margin-top: 21px;
 }
-
+.footer-contacts-number {
+  color: #000000;
+  text-decoration: none;
+}
 .footer-contacts-description b {
- /* font-size: 16px; */
   line-height: 30px;
   text-transform: uppercase;
 } 
@@ -892,11 +832,9 @@ a {
   margin: 0;
   padding: 0;
   padding-bottom: 25px;
- /* font-size: 16px; */
   line-height: 20px;
   color: #283136;
 }
-
 .callback-button {                               
   display: block;
   width: 204px;
@@ -951,8 +889,6 @@ a {
 .footer-social-slogan p {
   margin: 0;
   padding: 0;
- /* font-size: 16px;
-  line-height: 22px; */
   color: #283136;
 }
 .footer-socials {
@@ -1029,6 +965,7 @@ a {
 .input-form {
   margin-top: 50px;
   margin-bottom: 55px;
+  font-family: "Roboto", "Arial", sans-serif;   
 } 
 .modal-content {
   position: absolute;
@@ -1088,7 +1025,6 @@ a {
   float: right;           
   margin-bottom: 20px;
 }
-
 .modal-data span {
   font-size: 16px;
   line-height: 18px;
@@ -1097,18 +1033,14 @@ a {
   width: 199px;                      
   height: 34px;
   margin-top: 10px;
-  /*margin: 0; */
   padding-left: 15px;  
   font-size: 12px;
   line-height: 18px;
-  /*font-family: "Roboto", "Arial", sans-serif; */
   color: #000000;
   text-transform: uppercase;
   border: 2px solid #d7dcde;
   outline: none;
-  
 }
-
 .modal-dialog {
   margin-bottom: 50px;
 }
@@ -1120,7 +1052,6 @@ a {
   padding-top: 10px;
   font-size: 12px;
   line-height: 18px;
-  /*  font-family: "Roboto", "Arial", sans-serif; */
   color: #000000;
   text-transform: uppercase;
   border: 2px solid #d7dcde;
@@ -1129,8 +1060,6 @@ a {
 .modal-dialog span {
   font-size: 16px;
   line-height: 18px;
-  
-/*  font-family: inherit; */
 }
 .send-button {
   width: 460px;
