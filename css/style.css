@@ -535,19 +535,14 @@ footer {
   text-decoration: none;
   border: 3px solid #b5b5b5;
 }
-/*.filter-item input[type="radio"]:checked + .radio-indicator:hover::after:  {
-  color: #00ca74;
-} */
-.filter-item input[type="radio"] + .radio-indicator:hover {
-  text-decoration: none;
-  border: 3px solid #b5b5b5;
+.filter-item input[type="radio"]:checked + .radio-indicator:hover::after {
+  background-color: #b5b5b5;
 }
 .filter-features {                                   /*inner: Фильтр каталога - checkbox*/
   position: relative;
   padding-left: 44px;
   cursor: pointer;
-  color: #283136;
-  z-index: 1;   
+  color: #283136;    
 }
 .filter-features input[type="checkbox"] {
   display: none; 
@@ -562,33 +557,45 @@ footer {
   background: #ffffff;
   cursor: pointer; 
   border-radius: 5px;
-  overflow: hidden;  
 } 
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
   position: absolute;
-  top: 11px; 
-  left: 2px;  
-  width: 12px;
-  height: 5px;
-  background-color: #c1c1c1; 
+  top: 10px; 
+  left: 3px;  
+  width: 8px;
+  height: 1px;
+  border: 2px solid #c1c1c1; 
+  background-color: #c1c1c1;
+  z-index: 2;  
 }
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
   position: absolute;
-  top: 10px; 
-  left: 8px;  
-  width: 20px;
+  top: 5px; 
+  left: 5px;  
+  width: 22px;
   height: 5px;
-  background-color: #c1c1c1;
-  z-index: 2;  
+  border: 2px solid #ffffff;  
+  background-color: #c1c1c1; 
+  z-index: 1;   
 } 
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
   transform: rotate(45deg);   
 }
-
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::after {
   transform: rotate(-45deg); 
+}
+.filter-features input[type="checkbox"] + .checkbox-indicator:hover {
+  border: 2px solid #b5b5b5;
+}
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator:hover::before {
+  border: 2px solid #b5b5b5; 
+  background-color: #b5b5b5;
+}
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator:hover::after {
+  border: 2px solid #ffffff;  
+  background-color: #b5b5b5;
 }
 .catalog-filter-button {                       /*inner: Кнопка фильтра каталога*/
   width: 155px;
