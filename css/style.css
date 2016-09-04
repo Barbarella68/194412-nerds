@@ -9,8 +9,6 @@ body {
 .wrapper {
   background: #ffffff;
   width: 1200px; 
-/* width: 100%;       
- /* min-width: 900px;  */
 }
 .header {                              /*содержимое хэдера*/
   min-height: 95px; 
@@ -84,8 +82,7 @@ footer {
 }
 .link-active {                   /*навигация пункт меню для индикации текущей страницы*/
   position: relative;
-  text-decoration: none;
-  
+  text-decoration: none;  
 }
 .link-active::after {
   content: "";
@@ -178,7 +175,7 @@ footer {
   background:#c1c1c1;
 }
 .slider-list {}
-.slider-item {              /*index: все неактивные слайды не отображаются на экране */
+.slider-item {                        
   position: relative;
   display: none;
 }
@@ -187,12 +184,12 @@ footer {
 .slide3:checked ~ .slider-list .slider-item:nth-child(3) { 
   display: block;
 }
-.slider-item-image {               /*index:картинка слайда */
+.slider-item-image {                                            /*index:картинка слайда */
   position: absolute;
   right: 0;
   text-align: right;
 }
-.slider-item-text {              /*index: текст на слайде */
+.slider-item-text {                                             /*index: текст на слайде */
   position: absolute;
   top: 20px;  
 }
@@ -211,7 +208,7 @@ footer {
   padding: 5px 0;
   color: #283136; 
 }
-.slider-button {                     /* index: кнопка на слайде*/
+.slider-button {                                         /* index: кнопка на слайде*/
   width: 240px;
   height: 18px;
   color: #ffffff;
@@ -221,7 +218,7 @@ footer {
   border-radius: 5px;
   overflow: hidden;
 }  
-.directions-item {                    /*index: БЛОК - Направления работ компании*/
+.directions-item {                                  /*index: БЛОК - Направления работ компании*/
   float: left;
   width: 240px;
   margin-right: 80px;
@@ -265,7 +262,6 @@ footer {
   border-radius: 5px;
   overflow: hidden; 
 }
-
 .first {
   background: #fb565a;
 }
@@ -299,8 +295,7 @@ footer {
   border-top: 3px solid #a3841f;
   height: 15px;
 }
- 
-.description {                                  /*index: БЛОК - Описание компании*/  
+ .description {                                  /*index: БЛОК - Описание компании*/  
   margin-bottom: 115px;
 }                               
 .description-title {
@@ -375,7 +370,7 @@ footer {
 .description-right p:last-child {
   margin-bottom: 0;
 }
-.link-logo-img {                              /*index: БЛОК - Логотипы */
+.link-logo-img {                                   /*index: БЛОК - Логотипы */
   display: inline-block;            
   vertical-align: top; 
   margin-right: 76px;
@@ -391,21 +386,12 @@ footer {
 .link-logo-img:active {
   opacity: 1;
 }
-
-/*.link-logo-img a { 
-  background: url("../img/index/glukhankonew2.png");             
-  width: 240px;
-  height: 100px;
-}
-.link-logo-img a:hover {
-  background: url("../img/index/glukhankonew2.png");
-} */
 .caption {
   background: #eeeeee;
   min-height: 208px;
   margin-bottom: 80px;
 }
-.caption-container h1 {                          /*inner: Название страницы*/
+.caption-container h1 {                              /*inner: Название страницы*/
   padding: 0;
   margin: 0;
   font-size: 40px;                                    
@@ -413,7 +399,7 @@ footer {
   text-align: center;
   text-transform: uppercase;
 }
-.catalog-filter {                                /*inner: БЛОК - Фильтр каталога*/
+.catalog-filter {                                   /*inner: БЛОК - Фильтр каталога*/
   float: left;
   width: 240px;
   margin-right: 80px;
@@ -699,7 +685,7 @@ footer {
 .catalog-items {                                  
   font-size: 0;
 }  
-.catalog-item {                                /*inner: карточка товара*/
+.catalog-item {                                   /*inner: карточка товара*/
   position: relative; 
   display: inline-block;
   vertical-align: top;
@@ -803,7 +789,7 @@ footer {
 .catalog-item:hover .catalog-item-description {
   opacity: 1;
 }
-.catalog-pageswitch {                          /*inner: Пагинация*/
+.catalog-pageswitch {                              /*inner: Пагинация*/
   width: 284px;
   white-space: nowrap;
   margin-bottom: 80px;
@@ -848,7 +834,7 @@ footer {
 }  
 .footer-contacts {                               /*footer: БЛОК на карте - с адресом и тел.*/
   position: absolute;
-  bottom: 88px;        /*92px?????*/
+  bottom: 92px;        
   left: 160px; 
   width: 250px; 
   height: 240px;
@@ -889,7 +875,7 @@ footer {
   border-radius: 5px;
   overflow: hidden;  
 }
-.footer-map-logotype {                         /*footer: Логотип на карте */
+.footer-map-logotype {                            /*footer: Логотип на карте */
   position: absolute;
   bottom: 113px;
   left: 839px;
@@ -920,8 +906,8 @@ footer {
 .footer-socials {
   margin-bottom: 200px;
 }
-.sprite {                                           /* Спрайт */
-  background-image: url("..img/index/spritenew.png");
+.sprite {                                                 /* Спрайт */
+  background-image: url("../img/index/spritenew.png");
   background-repeat: no-repeat;
   display: block;
 }
@@ -945,7 +931,7 @@ footer {
   height: 15px;
   background-position: -5px -93px;
 } 
-.social-btn {
+.social-btn {                                             /*footer: социальные иконки*/
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -970,7 +956,7 @@ footer {
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);  
-  background-image: url("../img/index/spritenew.png");      /*было sprite.png*/
+  background-image: url("../img/index/spritenew.png");      
   background-repeat: no-repeat;
 }
 .social-btn-vk::before {
@@ -988,23 +974,6 @@ footer {
   height: 21px;
   background-position: -5px -62px;
 }
-/*
-.social-btn-vk::before {
-  width: 26px;
-  height: 15px;
-  background-position: -10px -128px;
-}
-.social-btn-fb::before {
-  width: 12px;
-  height: 22px;
-  background-position: -10px -45px;
-}
-.social-btn-inst::before {
-  width: 21px;
-  height: 21px;
-  background-position: -10px -87px;
-}
-*/
 .input-form {
   margin-top: 50px;
   margin-bottom: 55px;
