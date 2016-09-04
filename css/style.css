@@ -263,7 +263,7 @@ footer {
   padding-top:10px;
   padding-bottom: 10px;
   border-radius: 5px;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 .first {
@@ -669,7 +669,7 @@ footer {
   border-top: 11px solid #c1c1c1;
 }
 .triangle-down:hover {
-  border-top: 11px solid #c1c1c1;
+  border-top: 11px solid #b5b5b5;
 }
 .triangle-down:active {
   border-top: 11px solid #000000;
@@ -688,7 +688,7 @@ footer {
   border-bottom: 11px solid #c1c1c1;
 }
 .triangle-up:hover {
-  border-bottom: 11px solid #c1c1c1;
+  border-bottom: 11px solid #b5b5b5;
 }
 .triangle-up:active {
   border-bottom: 11px solid #000000;
@@ -905,7 +905,7 @@ footer {
   vertical-align: top;
   margin-right: 18px;
 } 
-.footer-social-logo a {
+.footer-social-logo a:last-child {
   margin-right: 0;
 }
 .footer-social-slogan b {
