@@ -382,23 +382,24 @@ footer {
   margin-bottom: 120px;
   opacity: 0.2;
 }
+.link-logo-img:last-child {
+  margin-right: 0;
+}
 .link-logo-img:hover {
   opacity: 1;
 }
 .link-logo-img:active {
   opacity: 1;
 }
-.link-logo-img:last-child {
-  margin-right: 0;
-}
-.link-logo-img a { 
-  background: url("../img/index/glukhankonew.png");
+
+/*.link-logo-img a { 
+  background: url("../img/index/glukhankonew2.png");             
   width: 240px;
   height: 100px;
 }
 .link-logo-img a:hover {
   background: url("../img/index/glukhankonew2.png");
-}
+} */
 .caption {
   background: #eeeeee;
   min-height: 208px;
@@ -507,34 +508,39 @@ footer {
   color: #283136;
 }
 .filter-item input[type="radio"] {
-  display: none;
+  display: none; 
 }
 .filter-item input[type="radio"] + .radio-indicator {
   position:absolute;
   top: -5px;
-  left: 0;
+  left: 0;  
   width: 25px;
   height: 25px;
   border: 3px solid #c1c1c1;
   background: #ffffff;
   cursor: pointer; 
-  border-radius: 50%;
+  border-radius: 50%;  
 } 
-/*.filter-item input[type="radio"]
-     :checked + .radio-indicator
-     ::before,*/
-	 
-	 
-.filter-item input[type="radio"]
-     :checked + .radio-indicator::after {
+.filter-item input[type="radio"]:checked + .radio-indicator::after {
   content: "";
   position: absolute;
- /* top: 8px;  */
- /* left: 30px; */
+  top: 9px; 
+  left: 9px; 
   width: 8px;
   height: 8px;
   background-color: #c1c1c1;
   border-radius: 50%;  
+}
+.filter-item input[type="radio"] + .radio-indicator:hover {
+  text-decoration: none;
+  border: 3px solid #b5b5b5;
+}
+/*.filter-item input[type="radio"]:checked + .radio-indicator:hover::after:  {
+  color: #00ca74;
+} */
+.filter-item input[type="radio"] + .radio-indicator:hover {
+  text-decoration: none;
+  border: 3px solid #b5b5b5;
 }
 .filter-features {                                   /*inner: Фильтр каталога - checkbox*/
   position: relative;
@@ -545,8 +551,7 @@ footer {
 .filter-features input[type="checkbox"] {
   display: none;
 }
-.filter-features input[type="checkbox"] +
-  .checkbox-indicator {
+.filter-features input[type="checkbox"] + .checkbox-indicator {
   position:absolute;
   top: -5px;
   left: 0;  
@@ -932,9 +937,25 @@ footer {
   top: 50%; 
   left: 50%; 
   transform: translate(-50%, -50%);  
-  background-image: url("../img/index/sprite.png");
+  background-image: url("../img/index/spritenew.png");      /*было sprite.png*/
   background-repeat: no-repeat;
 }
+.social-btn-vk::before {
+  width: 26px;
+  height: 15px;
+  background-position: -5px -93px;
+}
+.social-btn-fb::before {
+  width: 12px;
+  height: 22px;
+  background-position: -5px -30px;
+}
+.social-btn-inst::before {
+  width: 21px;
+  height: 21px;
+  background-position: -5px -62px;
+}
+/*
 .social-btn-vk::before {
   width: 26px;
   height: 15px;
@@ -950,6 +971,7 @@ footer {
   height: 21px;
   background-position: -10px -87px;
 }
+*/
 .input-form {
   margin-top: 50px;
   margin-bottom: 55px;
