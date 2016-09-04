@@ -546,10 +546,11 @@ footer {
   position: relative;
   padding-left: 44px;
   cursor: pointer;
-  color: #283136;  
+  color: #283136;
+  z-index: 1;   
 }
 .filter-features input[type="checkbox"] {
-  display: none;
+  display: none; 
 }
 .filter-features input[type="checkbox"] + .checkbox-indicator {
   position:absolute;
@@ -561,9 +562,34 @@ footer {
   background: #ffffff;
   cursor: pointer; 
   border-radius: 5px;
-  overflow: hidden;
+  overflow: hidden;  
 } 
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 11px; 
+  left: 2px;  
+  width: 12px;
+  height: 5px;
+  background-color: #c1c1c1; 
+}
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 10px; 
+  left: 8px;  
+  width: 20px;
+  height: 5px;
+  background-color: #c1c1c1;
+  z-index: 2;  
+} 
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);   
+}
 
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg); 
+}
 .catalog-filter-button {                       /*inner: Кнопка фильтра каталога*/
   width: 155px;
   height: 38px;
