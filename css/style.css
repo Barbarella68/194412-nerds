@@ -205,7 +205,7 @@ footer {
   font-size: 12px;
   line-height: 18px;
   padding: 10px 70px;   
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
 }  
 .directions-item {                                  /*index: БЛОК - Направления работ компании*/
@@ -249,7 +249,7 @@ footer {
   text-align: center;
   padding-top:10px;
   padding-bottom: 10px;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden; 
 }
 .first {
@@ -468,7 +468,7 @@ footer {
   margin-top: 20px;
   margin-bottom: 15px;
   padding: 0 30px;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
 }
 .scrolling .scale {
@@ -514,7 +514,7 @@ footer {
   background: #f1f1f1;
   margin-left: 10px;
   color: #283136;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
 } 
 .scrolling-cell-from {
@@ -578,7 +578,7 @@ footer {
   border: 2px solid #c1c1c1;
   background: #ffffff;
   cursor: pointer; 
-  border-radius: 5px;
+  border-radius: 3px;
 } 
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
@@ -625,7 +625,7 @@ footer {
   background: #f1f1f1;
   text-align: center;
   border: 0;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
 }
 .catalog-filter-button:hover {
@@ -734,7 +734,7 @@ footer {
   box-sizing: border-box;
   padding-top: 30px;
   background-color: #f1f1f1;
-  border-radius: 5px 5px 0 0;
+  border-radius: 3px 3px 0 0;
   -webkit-transition: background-color .3s linear;
   -o-transition: background-color .3s linear;  
   transition: background-color .3s linear;
@@ -842,7 +842,7 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden; 
   margin-right: 10px;
 }
@@ -910,7 +910,7 @@ footer {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px; 
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;  
 }
 .footer-map-logotype {                            /*footer: Логотип на карте */
@@ -1126,7 +1126,7 @@ footer {
   color: #ffffff;
   border: 0;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 3px;
   overflow: hidden;
 }
 
