@@ -304,6 +304,17 @@ footer {
 .description-container {
   position: relative;
 }
+.description-container::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: -80px;
+  margin: 0 10px;
+  width: 880px; 
+  height: 2px;
+  border-bottom: 2px solid #eeeeee;
+}
 .description-container p {
   margin-bottom: 15px;
   width: 578px;
