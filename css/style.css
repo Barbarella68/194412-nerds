@@ -79,17 +79,7 @@ footer {
 }
 .main-navigation li:last-child{
   margin-right: 0;
-}
-.link-active {                   /*навигация пункт меню для индикации текущей страницы*/
-  position: relative;
-  text-decoration: none;  
-}
-.link-active::after {
-  content: "";
-  position: absolute;
-  text-decoration: underline;
-  background-color: #fb565a;
-}
+}                   
 .package {                                   /*header:  - корзина*/
   position: relative;
   color: #000000;
@@ -343,36 +333,7 @@ footer {
   bottom: 45px; 
   left: 700px;
   padding: 0 15px;  
-/*  z-index: 2;  */
 }
-/*.index-logo-year span::after {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #fb565a;
-  position: relative;
-  top: -12px;
-  z-index: 1;
-}  
-/*.index-logo-year span {
-  position: relative;
-  display: inline-block;
-  bottom: 45px; 
-  left: 460px;
-  margin: 0;
-  padding: 0 15px;
-  text-align: center;
-  background-color: #ffffff; 
-  z-index: 2;
-}
-.index-logo-year:after {
-  content: "";
-  position: relative;
-  display: block;
- /* top: -46px;
-  left: 640px;    *                
-  border-bottom: 2px solid #eeeeee;;                       
-  z-index: 1;
-} */
 .description-left {
   float: left;
   width: 480px;
@@ -431,7 +392,21 @@ footer {
   height: 2px;
   border-bottom: 2px solid #fb565a;
 }  
- .link-logo-img {                                   /*index: БЛОК - Логотипы */
+.link-logo-container {                            /*index: БЛОК - Логотипы */
+  position: relative;
+}
+.link-logo-container::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: -47px; 
+  margin: 0 10px;
+  width: 880px; 
+  height: 2px;
+  border-bottom: 2px solid #eeeeee;
+}
+.link-logo-img {                                   
   display: inline-block;            
   vertical-align: top; 
   margin-right: 76px;
@@ -609,7 +584,7 @@ footer {
   content: "";
   position: absolute;
   top: 10px; 
-  left: 2px;    /*было 3px*/
+  left: 2px;    
   width: 8px;
   height: 1px;
   border: 2px solid #c1c1c1; 
@@ -867,7 +842,6 @@ footer {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  background: #f1f1f1;
   border-radius: 5px;
   overflow: hidden; 
   margin-right: 10px;
@@ -875,9 +849,12 @@ footer {
 .catalog-pageswitch a:last-child {
   margin-right: 0;
 }
-.page-current  {
-  border: 1px solid #f1f1f1;
-  background-color: #ffffff;
+.page-current {
+  border: 2px solid #f1f1f1;
+  background-color: #ffffff;  
+}
+.page-disabled {
+  background: #f1f1f1;
 }
 .page-disabled:hover {
   background: #e5e5e5;
@@ -1120,7 +1097,6 @@ footer {
 .modal-data  input:focus {
   border: 2px solid #56bffb;
 }  
-
 .modal-dialog {
   margin-bottom: 50px;
 }
