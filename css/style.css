@@ -201,7 +201,7 @@ footer {
 }
 .slider-button {                                         /* index: кнопка на слайде*/
   width: 240px;
-  height: 18px; 
+/*  height: 18px; */
   color: #ffffff;
   font-size: 12px;
   line-height: 18px;
@@ -262,8 +262,9 @@ footer {
 }
 .first:active {
   background: #b63538;
-  border-top: 3px solid #9b2d30;
-  height: 15px;
+ /* border-top: 3px solid #9b2d30; */
+  box-shadow: inset 0 3px #9b2d30;
+ /* height: 15px; */
 }
 .second {
   background: #00ca74;
@@ -273,8 +274,9 @@ footer {
 }
 .second:active {
   background: #009053;
-  border-top: 3px solid #007b47;
-  height: 15px;
+ /* border-top: 3px solid #007b47;
+  height: 15px; */
+  box-shadow: inset 0 3px #007b47;
 }
 .third {
   background: #efc84a;
@@ -284,8 +286,9 @@ footer {
 }
 .third:active {
   background: #c09b24;
-  border-top: 3px solid #a3841f;
-  height: 15px;
+ /* border-top: 3px solid #a3841f;
+  height: 15px;*/
+  box-shadow: inset 0 3px #a3841f;
 }
  .description {                                  /*index: БЛОК - Описание компании*/  
   margin-bottom: 115px;
@@ -549,8 +552,8 @@ footer {
   position:absolute;
   top: -5px;
   left: 0;  
-  width: 25px;
-  height: 25px;
+  width: 18px;
+  height: 18px;
   border: 3px solid #c1c1c1;
   background: #ffffff;
   cursor: pointer; 
@@ -559,8 +562,8 @@ footer {
 .filter-item input[type="radio"]:checked + .radio-indicator::after {
   content: "";
   position: absolute;
-  top: 9px; 
-  left: 9px; 
+  top: 5px; 
+  left: 5px; 
   width: 8px;
   height: 8px;
   background-color: #c1c1c1;
@@ -586,12 +589,12 @@ footer {
   position:absolute;
   top: -5px;
   left: 0;  
-  width: 23px;
-  height: 23px;
+  width: 19px;
+  height: 19px;
   border: 2px solid #c1c1c1;
   background: #ffffff;
   cursor: pointer; 
-  border-radius: 3px;
+  border-radius: 4px;
 } 
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
@@ -875,8 +878,9 @@ footer {
 }
 .page-disabled:active {
   background: #d5d5d5;
-  border-top: 3px solid #b5b5b5;
-  height: 35px;
+ /* border-top: 3px solid #b5b5b5;
+  height: 35px; */
+  box-shadow: inset 0 3px #b5b5b5;
 }
 .footer-map-container  {
   position: relative;
