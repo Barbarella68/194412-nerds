@@ -210,7 +210,7 @@ footer {
 }
 .slider-button {                                         /* index: кнопка на слайде*/
   width: 240px;
-  height: 18px;
+  height: 18px; 
   color: #ffffff;
   font-size: 12px;
   line-height: 18px;
@@ -326,7 +326,7 @@ footer {
 }
 .index-logo-year {
   text-transform: uppercase;
-}
+}  
 .index-logo-year span{
   position: relative;
   bottom: 45px; 
@@ -341,7 +341,27 @@ footer {
   position: relative;
   top: -12px;
   z-index: 1;
-}  */
+}  
+/*.index-logo-year span {
+  position: relative;
+  display: inline-block;
+  bottom: 45px; 
+  left: 460px;
+  margin: 0;
+  padding: 0 15px;
+  text-align: center;
+  background-color: #ffffff; 
+  z-index: 2;
+}
+.index-logo-year:after {
+  content: "";
+  position: relative;
+  display: block;
+ /* top: -46px;
+  left: 640px;    *                
+  border-bottom: 2px solid #eeeeee;;                       
+  z-index: 1;
+} */
 .description-left {
   float: left;
   width: 480px;
@@ -558,14 +578,14 @@ footer {
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
   position: absolute;
-  top: 5px; 
-  left: 5px;  
-  width: 22px;
-  height: 5px;
-  border: 2px solid #ffffff;  
+  top: 7px; 
+  left: 7px;  
+  width: 24px;
+  height: 6px;
+  outline: 2px solid #ffffff;  
   background-color: #c1c1c1; 
-  z-index: 1;   
-} 
+  z-index: 1
+  }
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
   transform: rotate(45deg);   
 }
@@ -580,7 +600,7 @@ footer {
   background-color: #b5b5b5;
 }
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator:hover::after {
-  border: 2px solid #ffffff;  
+  outline: 2px solid #ffffff;  
   background-color: #b5b5b5;
 }
 .catalog-filter-button {                       /*inner: Кнопка фильтра каталога*/
@@ -677,7 +697,7 @@ footer {
   border-bottom: 11px solid #b5b5b5;
 }
 .triangle-up:active {
-  border-bottom: 11px solid #000000;
+  border-bottom: 11px solid #000000;  
 }
 .triangle-down-active:focus {
   border-bottom: 11px solid #00ca74;
@@ -828,7 +848,7 @@ footer {
 }
 .footer-map-container  {
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 75px;
   width: 1200px;
   padding-left: 0;      
 }  
