@@ -467,6 +467,12 @@ footer {
   font-size: 18px;
   line-height: 30px;
 }
+.sidebar-filter-item  p {
+  padding-bottom: 15px;
+}
+.sidebar-filter-features p {
+  padding-bottom: 18px;
+}
 .scrolling {                                      /*inner: Фильтр каталога -"стоимость"*/
   position: relative;                           
   height: 80px;
@@ -536,7 +542,8 @@ footer {
   color: #283136;
 }
 .filter-item input[type="radio"] {
-  display: none; 
+  display: none;
+  
 }
 .filter-item input[type="radio"] + .radio-indicator {
   position:absolute;
