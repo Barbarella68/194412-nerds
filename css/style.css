@@ -125,11 +125,11 @@ footer {
   background: #fb565a;
   text-decoration: none;
 }
-.slider-container  {                          /*index: БЛОК - Слайдер*/
+/*.slider-container  {                          
   height: 316px;
-}
-.slider{                                    
-  position: relative;
+} */
+.slider{                                    /*index: БЛОК - Слайдер*/
+/*  position: relative; */
   height: 316px;
   background: #eeeeee;
   margin-bottom: 80px;
@@ -139,8 +139,8 @@ footer {
 }
 .slider-controls {                          /*index: круглые кнопки слайдера */
   position: absolute;
-  bottom: 85px;
-  left: 50%;
+  bottom: 110px;
+  left: 58%;
   margin-left: -100px;
   width: 200px;
   height: 10px;
@@ -164,9 +164,10 @@ footer {
 .slide3:checked ~ .slider-controls label:nth-child(3) { 
   background:#c1c1c1;
 }
-.slider-list {}
+/*.slider-list {}  */
+
 .slider-item {                        
-  position: relative;
+/*  position: relative; */
   display: none;
 }
 .slide1:checked ~ .slider-list .slider-item:nth-child(1),       /*index: переключение между слайдами */
@@ -175,13 +176,21 @@ footer {
   display: block;
 }
 .slider-item-image {                                            /*index:картинка слайда */
-  position: absolute;
+/*  position: absolute;
   right: 0;
-  text-align: right;
+  text-align: right; */
+  float: right;
+  padding-right: 0;
+  
 }
 .slider-item-text {                                             /*index: текст на слайде */
-  position: absolute;
-  top: 20px;  
+  float: left;
+  width: 480px;
+  margin-right: 60px;
+  padding-top: 40px;
+  
+ /* position: absolute;
+  top: 20px;  */
 }
 .slider-item-text h2 {
   padding: 0;
@@ -190,13 +199,13 @@ footer {
   line-height: 36px;
   font-weight: normal;
   color: #000000;
-  padding-bottom: 15px;  
+  padding-bottom: 25px;  
 }
 .slider-item-text p {
   margin: 0;
   padding: 0; 
-  margin-bottom: 30px;
-  padding: 5px 0;
+  padding-bottom: 30px;
+ /* padding: 5px 0; */
   color: #283136; 
 }
 .slider-button {                                         /* index: кнопка на слайде*/
@@ -579,7 +588,7 @@ footer {
 }
 .filter-item input[type="radio"] + .radio-indicator {
   position:absolute;
-  top: -5px;
+  top: -2px;
   left: 0;  
   width: 18px;
   height: 18px;
@@ -616,10 +625,10 @@ footer {
 }
 .filter-features input[type="checkbox"] + .checkbox-indicator {
   position:absolute;
-  top: -5px;
+  top: -2px;
   left: 0;  
-  width: 19px;
-  height: 19px;
+  width: 18px;
+  height: 18px;
   border: 2px solid #c1c1c1;
   background: #ffffff;
   cursor: pointer; 
@@ -628,21 +637,22 @@ footer {
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
   position: absolute;
-  top: 10px; 
-  left: 2px;    
-  width: 8px;
-  height: 1px;
-  border: 2px solid #c1c1c1; 
+  top: 5px; 
+  left: 1px;   
+  width: 7px;
+  height: 5px;
+  
+  border: 2px solid #c1c1c1;
   background-color: #c1c1c1;
   z-index: 2;  
 }
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::after {
   content: "";
   position: absolute;
-  top: 7px; 
-  left: 7px;  
-  width: 24px;
-  height: 6px;
+  top: 3px; 
+  left: 5px;  
+  width: 22px;
+  height: 5px;
   outline: 2px solid #ffffff;  
   background-color: #c1c1c1; 
   z-index: 1
@@ -886,7 +896,7 @@ footer {
   display: inline-block;
  /* min-width: 8px;
   height: 38x; */
-  padding: 0 15px; 
+/*  padding: 0 15px; */
   font-size: 12px;
   line-height: 38px;
   text-align: center;
@@ -900,13 +910,17 @@ footer {
 }
 .catalog-pageswitch a:last-child {
   margin-right: 0;
+  
 }
 .page-current {
   border: 2px solid #f1f1f1;
-  background-color: #ffffff;  
+  background-color: #ffffff; 
+  padding: 0 15px; 
+
 }
 .page-disabled {
   background: #f1f1f1;
+  padding: 0 15px; 
 }
 .page-disabled:hover {
   background: #e5e5e5;
