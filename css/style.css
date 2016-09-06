@@ -878,8 +878,8 @@ footer {
 }
 .catalog-pageswitch a {
   display: inline-block;
-  min-width: 8px;
-  height: 38x;
+ /* min-width: 8px;
+  height: 38x; */
   padding: 0 15px; 
   font-size: 12px;
   line-height: 38px;
@@ -889,7 +889,7 @@ footer {
   text-decoration: none;
   color: #000000;
   border-radius: 3px;
-  overflow: hidden; 
+ /* overflow: hidden; */
   margin-right: 10px;
 }
 .catalog-pageswitch a:last-child {
