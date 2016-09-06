@@ -129,7 +129,7 @@ footer {
   height: 316px;
 } */
 .slider{                                    /*index: БЛОК - Слайдер*/
-/*  position: relative; */
+  position: relative; 
   height: 316px;
   background: #eeeeee;
   margin-bottom: 80px;
@@ -139,8 +139,8 @@ footer {
 }
 .slider-controls {                          /*index: круглые кнопки слайдера */
   position: absolute;
-  bottom: 110px;
-  left: 58%;
+  bottom: 90px;
+  left: 49%;
   margin-left: -100px;
   width: 200px;
   height: 10px;
@@ -791,14 +791,14 @@ footer {
   height: 270px;
   overflow: hidden;
   margin-bottom: 80px; 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box; 
+ /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; */
   box-sizing: border-box;
   padding-top: 30px;
   background-color: #f1f1f1;
   border-radius: 3px 3px 0 0;
-  -webkit-transition: background-color .3s linear;
-  -o-transition: background-color .3s linear;  
+ /* -webkit-transition: background-color .3s linear;
+  -o-transition: background-color .3s linear;  */
   transition: background-color .3s linear;
 }
 .catalog-item:nth-child(2n) {
@@ -834,18 +834,20 @@ footer {
   position: absolute;
   top: 50px;
   left: 20px;
-  display: block;
+ /* display: block;  */
+  overflow: hidden;
+  overflow: auto;
   width: 200px;
   height: 200px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+/*  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;  */
   box-sizing: border-box;
   padding: 30px 20px;
   background-color: #ffffff;
   opacity: 0;
   text-align: center;
-  -webkit-transition: opacity .5s linear;
-  -o-transition: opacity .5s linear;
+/*  -webkit-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;  */
   transition: opacity .5s linear;
 }
 .catalog-item-description h3 {
@@ -859,8 +861,9 @@ footer {
 .catalog-item-description p {
   margin: 0;
   padding: 0;
-  height: 160px;
-  overflow: hidden;
+ /* height: 160px; */
+  /* overflow: hidden; */
+  
   margin: 12px 0 0 0;
   font-size: 14px;
   line-height: 18px;
@@ -872,10 +875,13 @@ footer {
   bottom: 30px;
   display: block;
   width: 140px;
-  height: 38px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+/*  height: 38px;  */
   font-size: 18px;
   line-height: 18px;
   background: #fb565a;
+  color: #000000;
   border: 0;
 }
 .catalog-item-buy:hover {
