@@ -578,9 +578,13 @@ footer {
 .scrolling-cell-to {
   right: 0;                  
 }
-.filter-item {                                   /*inner: Фильтр каталога - radio button*/
+/*inner: Фильтр каталога - radio button*/
+.filter-item {                                   
   position: relative;
-  padding-left: 35px;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding-left: 44px;
   cursor: pointer;
   color: #283136;
 }
@@ -616,8 +620,12 @@ footer {
 .filter-item input[type="radio"]:checked + .radio-indicator:hover::after {
   background-color: #b5b5b5;
 }
-.filter-features {                                   /*inner: Фильтр каталога - checkbox*/
+/*inner: Фильтр каталога - checkbox*/
+.filter-features {                                   
   position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 15px;
   padding-left: 35px;
   cursor: pointer;
   color: #283136;    
