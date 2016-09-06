@@ -733,9 +733,9 @@ footer {
   border-bottom: none;
 }
 .triangle-down  {
-  position: absolute;
-  top: 5px;
-  left: 530px; 
+  position: relative;
+/*  top: 5px; */
+  left: 100px; 
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
@@ -752,9 +752,9 @@ footer {
   border-top: 11px solid #00ca74;
 }
 .triangle-up {
-  position: absolute; 
-  top: 5px;
-  left: 550px;
+  position: relative; 
+/*  top: 5px;  */
+  left: 70px;
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
