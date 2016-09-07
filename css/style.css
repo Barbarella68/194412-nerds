@@ -10,15 +10,14 @@ body {
 .header {
   min-height: 95px; 
   padding-top: 25px;
-  background: #eeeeee; 
+  background: #eeeeee;   
 }
 .container {
-  width: 900px;
+  width: 904px;
   padding: 0 10px;
   margin: 0 auto;
-  box-sizing: border-box;  
+  box-sizing: border-box;   
 } 
-
 .clearfix::after {
   content: "";
   display: table;
@@ -434,7 +433,6 @@ body {
 .link-logo-container {
   padding-top: 45px;
   padding-bottom: 30px;
-  border-bottom: 2px solid #eeeeee;
 }
 .link-logo-container a {                                   
   display: inline-block;            
@@ -451,9 +449,491 @@ body {
 .link-logo-container a:active {
   opacity: 1;
 }
+.caption-container {
+  padding-top: 70px;
+  padding-bottom: 90px;
+  background: #eeeeee;   
+}
+/*inner: Название страницы*/
+.caption-container h1 {                              
+  padding: 0;
+  margin: 0;
+  font-size: 40px;                                    
+  line-height: 48px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;  
+}
+/*inner: БЛОК - Фильтр каталога*/
+.catalog-container {
+  margin-top: 80px;
+}
+.catalog-filter {                                   
+  float: left;
+  width: 240px;
+  margin-right: 80px;  
+} 
+.sidebar fieldset {                                   
+  border-color: transparent;
+  margin-bottom: 50px;
+} 
+.sidebar-filter-value {                           
+  padding: 0;
+} 
+.sidebar-filter-item {
+  padding: 0;
+  line-height: 20px;
+}
+.sidebar-filter-features {
+  padding: 0;
+  width: 240px;
+  line-height: 20px;
+}
+.sidebar legend {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 30px;
+}
+.sidebar-filter-item  p {
+  padding-bottom: 15px;
+}
+.sidebar-filter-features p {
+  padding-bottom: 18px;
+}
+.scrolling {                                      /*inner: Фильтр каталога -"стоимость"*/
+  position: relative;                           
+  height: 80px;
+  background: #f1f1f1;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding: 0 30px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.scrolling .scale {
+  margin-top: 39px;
+  height: 2px;
+  background: #d7dcde; 
+}
+.scrolling .bar {
+  height: 2px;
+  background: #00ca74;
+}
+.scrolling .toggle {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid white;
+  background: #ababab;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+.scrolling .max-toggle {
+  left: 145px;
+}
+.scrolling-cell {
+  position: relative;
+  height: 38px;
+}
+.scrolling-cell label {
+  position: absolute;
+}
+.scrolling-cell  span{
+  text-transform: uppercase;
+  color: #283136;
+ }
+.scrolling-cell input {
+  width: 80px;
+  height: 38px;
+  border: 0;
+  text-align: center;
+  background: #f1f1f1;
+  margin-left: 8px;
+  color: #283136;
+  border-radius: 3px;
+  overflow: hidden;
+} 
+.scrolling-cell-from {
+  left: 0;                   
+}
+.scrolling-cell-to {
+  right: 0;                  
+}
+/*inner: Фильтр каталога - radio button*/
+.filter-item {                                   
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+  margin-top: 20px;
+  padding-left: 44px;
+  cursor: pointer;
+  color: #283136;
+}
+.filter-item input[type="radio"] {
+  display: none;  
+}
+.filter-item input[type="radio"] + .radio-indicator {
+  position:absolute;
+  top: -2px;
+  left: 0;  
+  width: 18px;
+  height: 18px;
+  border: 3px solid #c1c1c1;
+  background: #ffffff;
+  cursor: pointer; 
+  border-radius: 50%;  
+} 
+.filter-item input[type="radio"]:checked + .radio-indicator::after {
+  content: "";
+  position: absolute;
+  top: 5px; 
+  left: 5px; 
+  width: 8px;
+  height: 8px;
+  background-color: #c1c1c1;
+  border-radius: 50%;  
+}
+.filter-item input[type="radio"] + .radio-indicator:hover {
+  text-decoration: none;
+  border: 3px solid #b5b5b5;
+}
+.filter-item input[type="radio"]:checked + .radio-indicator:hover::after {
+  background-color: #b5b5b5;
+}
+/*inner: Фильтр каталога - checkbox*/
+.filter-features {                                   
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-left: 35px;
+  cursor: pointer;
+  color: #283136;    
+}
+.filter-features input[type="checkbox"] {
+  display: none; 
+}
+.filter-features input[type="checkbox"] + .checkbox-indicator {
+  position:absolute;
+  top: -2px;
+  left: 0;  
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c1c1c1;
+  background: #ffffff;
+  cursor: pointer; 
+  border-radius: 4px;
+} 
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
+  content: "";
+  position: absolute;
+  top: 7px; 
+  left: 1px;   
+  width: 8px;
+  height: 1px;
+  border: 2px solid #c1c1c1;
+  background-color: #c1c1c1;
+  z-index: 2;  
+}
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 3px; 
+  left: 6px;  
+  width: 20px;
+  height: 5px;
+  outline: 2px solid #ffffff;  
+  background-color: #c1c1c1; 
+  z-index: 1
+  }
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);   
+}
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg); 
+}
+.filter-features input[type="checkbox"] + .checkbox-indicator:hover {
+  border: 2px solid #b5b5b5;
+}
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator:hover::before {
+  border: 2px solid #b5b5b5; 
+  background-color: #b5b5b5;
+}
+.filter-features input[type="checkbox"]:checked + .checkbox-indicator:hover::after {
+  outline: 2px solid #ffffff;  
+  background-color: #b5b5b5;
+}
+.catalog-filter-button {                       /*inner: Кнопка фильтра каталога*/
+  width: 155px;
+  background: #f1f1f1;
+  text-align: center;
+  padding: 10px 47px;
+  border: 0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.catalog-filter-button:hover {
+  background: #e5e5e5;
+}
+.catalog-filter-button:active {
+  background: #d5d5d5;
+}
+.catalog-list {                           /*inner: БЛОК - список товара*/
+  float: right;
+  width: 560px;   
+} 
+.catalog-selection {                        /*inner: Панель сортировки*/ 
+  position: relative;                      
+  font-size: 0;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+.catalog-selection  ul {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 0;
+}
+.catalog-selection li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+  font-size: 12px;
+} 
+.catalog-selection li:last-child {
+  margin-right: 0;
+}
+.catalog-selection  span {        
+  color: #000000;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+.catalog-selection a {
+  color: #c7c7c7; 
+  text-decoration: none;
+  border-bottom: 1px dashed #00ca74;
+  font-weight: normal;  
+}
+.catalog-selection a:hover {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #00ca74;
+}
+.catalog-selection a:active {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: none;
+}
+.triangle-down  {
+  position: relative;
+  left: 100px; 
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 11px solid #c1c1c1;
+}
+.triangle-down:hover {
+  border-top: 11px solid #b5b5b5;
+}
+.triangle-down:active {
+  border-top: 11px solid #000000;
+}
+.triangle-down:focus {
+  border-top: 11px solid #00ca74;
+}
+.triangle-up {
+  position: relative; 
+  left: 70px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 11px solid #c1c1c1;
+}
+.triangle-up:hover {
+  border-bottom: 11px solid #b5b5b5;
+}
+.triangle-up:active {
+  border-bottom: 11px solid #000000;  
+}
+.triangle-down-active:focus {
+  border-bottom: 11px solid #00ca74;
+} 
+.catalog-items {                                  
+  font-size: 0;
+}  
+.catalog-item {                                   /*inner: карточка товара*/
+  position: relative; 
+  display: inline-block;
+  vertical-align: top;
+  width: 240px;
+  height: 270px;
+  overflow: hidden;
+  margin-bottom: 80px; 
+ /* -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; */
+  box-sizing: border-box;
+  padding-top: 30px;
+  background-color: #f1f1f1;
+  border-radius: 3px 3px 0 0;
+ /* -webkit-transition: background-color .3s linear;
+  -o-transition: background-color .3s linear;  */
+  transition: background-color .3s linear;
+}
+.catalog-item:nth-child(2n) {
+  margin-left: 80px;
+}
+.catalog-item:hover {
+  background-color: #797979;
+}
+.catalog-item:after,
+.catalog-item:before {
+  position: absolute;
+  top: 10px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.catalog-item:after {
+  left: 12px;
+}
+.catalog-item:before {
+  left: 29px;
+  box-shadow: 17px 0 0 0 #ffffff;
+}
+.catalog-item-img {}
+.catalog-item-img img {
+  width: 240px;
+  height: 240px;
+}
+.catalog-item-description {                          /*inner: Карточка товара - Описание товара*/
+  position: absolute;
+  top: 50px;
+  left: 20px; 
+  overflow: hidden;
+  overflow: auto;
+  width: 200px;
+  height: 200px;
+/*  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;  */
+  box-sizing: border-box;
+  padding: 30px 20px; 
+  background-color: #ffffff;
+  opacity: 0;
+  text-align: center;
+/*  -webkit-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;  */
+  transition: opacity .5s linear;
+}
+.catalog-item-description h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+.catalog-item-description p {
+  margin: 0;
+  padding: 0;
+ /* height: 160px; */
+  /* overflow: hidden; */
+  
+  margin: 12px 0 0 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: #283136;
+}
+.catalog-item-buy {                            /*inner: Карточка товара - кнопка*/
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  display: block;
+  width: 140px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+/*  height: 38px;  */
+  font-size: 18px;
+  line-height: 18px;
+  background: #fb565a;
+  color: #000000;
+  border: 0;
+}
+.catalog-item-buy:hover {
+  background: #d6494d;
+}
+.catalog-item-buy:active {
+  background: #b63538;
+}
+.catalog-item:hover .catalog-item-description {
+  opacity: 1;
+}
+.catalog-pageswitch {                              /*inner: Пагинация*/
+ /* width: 284px;
+  white-space: nowrap; */
+  margin-bottom: 80px;
+}
+.catalog-pageswitch a {
+  display: inline-block;
+  vertical-align: top;
+ /* min-width: 8px;
+  height: 38x; */
+/*  padding: 0 15px; */
+  font-size: 12px;
+  line-height: 38px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  border-radius: 3px;
+ /* overflow: hidden; */
+  margin-right: 10px;
+}
+.catalog-pageswitch a:last-child {
+  margin-right: 0;
+  
+}
+.page-current {
+  border: 2px solid #f1f1f1;
+  background-color: #ffffff; 
+  padding: 0 15px; 
+
+}
+.page-disabled {
+  background: #f1f1f1;
+  padding: 0 15px; 
+}
+.page-disabled:hover {
+  background: #e5e5e5;
+}
+.page-disabled:active {
+  background: #d5d5d5;
+ /* border-top: 3px solid #b5b5b5;
+  height: 35px; */
+  box-shadow: inset 0 3px #b5b5b5;
+}
+
+
 /*footer:*/
 .footer-map-container  {
   position: relative;
+ /* margin-bottom: 75px;*/
   width: 1200px;
   padding-left: 0;
   padding-top: 85px;
@@ -509,13 +989,12 @@ body {
   bottom: 195px;
   left: 839px;
 }
-.footer-socials-container {
-  padding-bottom: 75px;  
-}
 /*footer: Иконки -в контакте, фейсбук, инстаграмм*/  
 .footer-social-logo {                             
   float: left;
   width: 240px;
+ /* height: 215px;  */
+ /* margin-right: 80px; */
 }
 .footer-social-logo a {
   display: inline-block;
@@ -537,6 +1016,9 @@ body {
   margin: 0;
   padding: 0;
   color: #283136;
+}
+.footer-socials-container {
+  margin-bottom: 80px;
 }
 /* Спрайт */
 .sprite {                                                 
