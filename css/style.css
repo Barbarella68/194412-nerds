@@ -8,15 +8,18 @@ body {
   background: #ffffff;  
 }
 .header {
-  min-height: 95px; 
+ /* min-height: 95px; */
   padding-top: 25px;
-  background: #eeeeee;   
+  background: #eeeeee; 
+    
 }
 .container {
   width: 904px;
   padding: 0 10px;
   margin: 0 auto;
-  box-sizing: border-box;   
+  box-sizing: border-box; 
+
+ 
 } 
 .clearfix::after {
   content: "";
@@ -25,17 +28,19 @@ body {
 }
 /*header: меню навигации*/
 .main-navigation {                          
-  position: relative;                    
+ /* position: relative;       */             
   float: left;
   width: 720px;
   text-transform: uppercase;
+ 
 }
 /*header: - логотип*/
 .index-logotype {                            
-  position: absolute;
-  width: 140px;
-  height: 55px;
-  margin-right: 180px;
+/*  position: absolute;*/
+  float: left;
+  width: 139px;
+  height: 56px;
+  margin-right: 180px; 
 }
 .index-logotype img {
   width: 139px;        
@@ -48,7 +53,7 @@ body {
 .main-navigation ul {                           
   margin: 0;
   padding: 0;
-  margin-left: 320px; 
+ /* margin-left: 320px; */
   list-style: none;
   margin-top: 30px;
   font-size: 0;
@@ -67,9 +72,10 @@ body {
   display: inline;
   margin: 0;
   padding: 0;
-  margin-right: 35px; 
+  margin-right: 41px; 
   font-size: 14px;
   line-height: 30px; 
+  margin-top: 35px;
 }
 .main-navigation li:last-child{
   margin-right: 0;
@@ -124,13 +130,16 @@ body {
 /*header: слайдер */
 .slider-container {                                    
   position: relative; 
-  min-height: 316px; 
+   /*min-height: 355px; */
   background: #eeeeee;
-  padding-top: 45px; 
-  padding-left: 0;  
+  padding-top: 40px;       /*было 45px*/
+  padding-left: 0; 
+   
 } 
+
 .sliders {                                  
-  display: none;  
+  display: none;
+   
 }
 /*header: круглые кнопки слайдера */
 .slider-controls {                          
@@ -161,9 +170,14 @@ body {
 .slide3:checked ~ .slider-controls label:nth-child(3) { 
   background:#c1c1c1;
 }
+.slider-list {
+  min-height: 320px;
+  
+}
 .slider-item {                        
   position: relative; 
   display: none;
+  
 }
 /*header: переключение между слайдами */
 .slide1:checked ~ .slider-list .slider-item:nth-child(1),       
@@ -174,6 +188,7 @@ body {
 /*header: картинка слайда */
 .slider-item-image {                                            
   float: right;
+/*  min-height: 320px; */
   
   /*background-position: right, top;
   background-image: url("img/index/slide1.png");
@@ -184,7 +199,10 @@ body {
   float: left; 
   width: 480px;
   margin-right: 60px;
-  padding-top: 40px;
+/*  padding-top: 25px; */
+/*  min-height: 286px; */
+  min-height: 320px; 
+  
 }
 .slider-item-text h2 {
   padding: 0;
@@ -193,7 +211,8 @@ body {
   line-height: 36px;
   font-weight: normal;
   color: #000000;
-  padding-bottom: 15px;  
+  padding-bottom: 15px;
+  padding-top: 40px;  
 }
 .slider-item-text p {
   margin: 0;
