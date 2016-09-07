@@ -19,7 +19,6 @@ body {
   margin: 0 auto;
   box-sizing: border-box; 
 
- 
 } 
 .clearfix::after {
   content: "";
@@ -129,12 +128,13 @@ body {
 }
 /*header: слайдер */
 .slider-container {                                    
-  position: relative; 
+/*  position: relative; 
    /*min-height: 355px; */
   background: #eeeeee;
-  padding-top: 40px;       /*было 45px*/
+  margin-top: 30px;
+ /* padding-top: 40px;       
   padding-left: 0; 
-   
+   border: 1px solid #fb565a; */
 } 
 
 .sliders {                                  
@@ -144,10 +144,10 @@ body {
 /*header: круглые кнопки слайдера */
 .slider-controls {                          
   position: absolute;
-  bottom: 105px;
+  bottom: 115px;
   left: 49%;
-  margin-left: -100px;
-  width: 200px;
+  margin-left: -35px;
+  width: 60px;
   height: 10px;
   text-align: center;
   z-index: 100;
@@ -171,7 +171,7 @@ body {
   background:#c1c1c1;
 }
 .slider-list {
-  min-height: 320px;
+  min-height: 319px;
   
 }
 .slider-item {                        
@@ -188,6 +188,7 @@ body {
 /*header: картинка слайда */
 .slider-item-image {                                            
   float: right;
+  
 /*  min-height: 320px; */
   
   /*background-position: right, top;
@@ -201,7 +202,7 @@ body {
   margin-right: 60px;
 /*  padding-top: 25px; */
 /*  min-height: 286px; */
-  min-height: 320px; 
+ /* min-height: 326px; */
   
 }
 .slider-item-text h2 {
@@ -211,13 +212,13 @@ body {
   line-height: 36px;
   font-weight: normal;
   color: #000000;
-  padding-bottom: 15px;
+  padding-bottom: 22px;
   padding-top: 40px;  
 }
 .slider-item-text p {
   margin: 0;
   padding: 0; 
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   color: #283136; 
 }
 /* header: кнопка на слайде*/
