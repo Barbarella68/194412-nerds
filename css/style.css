@@ -7,30 +7,16 @@ body {
   color: #000000; 
   background: #ffffff;  
 }
-/*содержимое header*/
-/*.header-container {
-  min-height: 95px; 
-  padding-top: 25px;
-  background: #eeeeee; 
- /* text-transform: uppercase; 
-  
-  border: 1px solid #000000;
-}  */
-
 .header {
   min-height: 95px; 
   padding-top: 25px;
   background: #eeeeee; 
-  
-  
 }
 .container {
   width: 900px;
   padding: 0 10px;
   margin: 0 auto;
-  box-sizing: border-box;
-  
-  
+  box-sizing: border-box;  
 } 
 
 .clearfix::after {
@@ -38,15 +24,6 @@ body {
   display: table;
   clear: both;
 }
-/*.container {
-  width: 904px;
-  padding: 0 10px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  border: 1px solid #00ca74;
-  
-} */
-
 /*header: меню навигации*/
 .main-navigation {                          
   position: relative;                    
@@ -318,15 +295,13 @@ body {
 .description-container {
   padding-top: 75px;
   padding-bottom: 70px;
-  border-bottom: 2px solid #eeeeee;                         
-  
+  border-bottom: 2px solid #eeeeee;                           
 }
 /*index: БЛОК - Описание компании - левая колонка*/
 .description-container-left {
   float: left;
   width: 620px;
-  margin-right: 20px;
- 
+  margin-right: 20px; 
 }
 .description-container-left b {
   font-size: 36px;
@@ -385,8 +360,7 @@ body {
   margin: auto;
   width: 187px;
   height: 75px;
-  margin-bottom: 15px;
- 
+  margin-bottom: 15px; 
 } 
 .index-logo-year {
   text-align: center;
@@ -460,6 +434,7 @@ body {
 .link-logo-container {
   padding-top: 45px;
   padding-bottom: 30px;
+  border-bottom: 2px solid #eeeeee;
 }
 .link-logo-container a {                                   
   display: inline-block;            
@@ -476,8 +451,6 @@ body {
 .link-logo-container a:active {
   opacity: 1;
 }
-
-
 /*footer:*/
 .footer-map-container  {
   position: relative;
