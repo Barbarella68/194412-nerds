@@ -433,6 +433,7 @@ body {
 .link-logo-container {
   padding-top: 45px;
   padding-bottom: 30px;
+  border-bottom: 2px solid #eeeeee;
 }
 .link-logo-container a {                                   
   display: inline-block;            
