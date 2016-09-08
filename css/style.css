@@ -348,7 +348,7 @@ body {
   position: relative;
   top: 12px;
   left: -36px;
-  width: 21px;
+  width: 23px;
   border-bottom: 2px solid #fb565a;  
 }
 /*index: БЛОК - Описание компании - правая колонка*/
@@ -427,9 +427,9 @@ body {
   content: "";
   display: block;
   position: relative;
-  top: 12px;
+  top: 13px;
   left: -36px;
-  width: 21px;
+  width: 23px;
   border-bottom: 2px solid #fb565a;
 }
 /*index: БЛОК - Логотипы */  
@@ -932,7 +932,7 @@ body {
 /*footer: БЛОК на карте - с адресом и тел.*/  
 .footer-contacts {                               
   position: absolute;
-  bottom: 172px;       
+  bottom: 162px;       
   left: 160px; 
   width: 250px; 
   height: 240px;
@@ -976,7 +976,7 @@ body {
 /*footer: Логотип на карте */
 .footer-map-logotype {                            
   position: absolute;
-  bottom: 195px;
+  bottom: 185px;
   left: 839px;
 }
 /*footer: Иконки -в контакте, фейсбук, инстаграмм*/  
