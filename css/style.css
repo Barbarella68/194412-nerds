@@ -499,12 +499,12 @@ body {
   font-size: 18px;
   line-height: 30px;
 }
-.sidebar-filter-item  p {
+/*.sidebar-filter-item  p {
   padding-bottom: 15px;
-}
-.sidebar-filter-features p {
+} */
+/*.sidebar-filter-features p {
   padding-bottom: 18px;
-}
+} */
 .sidebar .sidebar-filter-item {
   margin-bottom: 25px;
 }
@@ -577,7 +577,7 @@ body {
   display: block;
   margin-bottom: 15px;
   margin-top: 20px;
-  padding-left: 44px;
+  padding-left: 35px;
   cursor: pointer;
   color: #283136;
 }
@@ -612,6 +612,16 @@ body {
 .filter-item input[type="radio"]:checked + .radio-indicator:hover::after {
   background-color: #b5b5b5;
 }
+
+.filter-item input[type="radio"]:disabled + .radio-indicator {
+  text-decoration: none;
+  border: 3px solid #e9e9e9;
+}
+/*.filter-item input[type="radio"]:disabled+ .radio-indicator::after {
+  background-color: #e9e9e9;
+} */
+
+
 /*inner: Фильтр каталога - checkbox*/
 .filter-features {                                   
   position: relative;
@@ -659,9 +669,13 @@ body {
   z-index: 1
   }
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::before {
+  -webkit-transform: rotate(45deg);   
+  -ms-transform: rotate(45deg);   
   transform: rotate(45deg);   
 }
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator::after {
+  -webkit-transform: rotate(-45deg); 
+  -ms-transform: rotate(-45deg); 
   transform: rotate(-45deg); 
 }
 .filter-features input[type="checkbox"] + .checkbox-indicator:hover {
@@ -674,6 +688,9 @@ body {
 .filter-features input[type="checkbox"]:checked + .checkbox-indicator:hover::after {
   outline: 2px solid #ffffff;  
   background-color: #b5b5b5;
+}
+.filter-features input[type="checkbox"]:disabled + .checkbox-indicator {
+  border: 2px solid #e9e9e9;
 }
 .catalog-filter-button {                       /*inner: Кнопка фильтра каталога*/
   width: 155px;
@@ -870,7 +887,8 @@ body {
   font-size: 18px;
   line-height: 18px;
   background: #fb565a;
-  color: #000000;
+  color: #ffffff;
+  border-radius: 2px;
   border: 0;
 }
 .catalog-item-buy:hover {
@@ -878,6 +896,7 @@ body {
 }
 .catalog-item-buy:active {
   background: #b63538;
+  box-shadow: inset 0 3px #9b2d30;
 }
 .catalog-item:hover .catalog-item-description {
   opacity: 1;
@@ -1055,6 +1074,7 @@ body {
 }
 .social-btn:active {
   background-color: #d6494d;
+  box-shadow: inset 0 3px #b63e42;
 }
 .social-btn::before {
   content: "";
@@ -1079,7 +1099,7 @@ body {
   width: 21px;
   height: 21px;
   background-position: -5px -62px;
-}							                          
+}                                       
 /*footer: Модальное окно */
 .modal-content {                                  
   position: absolute;
@@ -1122,9 +1142,13 @@ body {
   border-radius: 1px; 
 }
 .modal-content-close::before {
- transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);   
+  -ms-transform: rotate(45deg);   
+  transform: rotate(45deg);
 }
 .modal-content-close::after {
+  -webkit-transform: rotate(-45deg);   
+  -ms-transform: rotate(-45deg);   
   transform: rotate(-45deg);
 }
 .input-form {
