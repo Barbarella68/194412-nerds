@@ -950,6 +950,13 @@
 .footer-map-container-catalog {
   padding-top: 0;
 }
+.map {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 416px;
+  z-index: 10;
+}
 /*footer: БЛОК на карте - с адресом и тел.*/
 .footer-contacts {
   position: absolute;
@@ -958,6 +965,7 @@
   width: 250px;
   height: 240px;
   background: #ffffff;
+  z-index: 200;
 }
 .footer-contacts-description {            
   padding-left: 19px;
@@ -1112,10 +1120,26 @@
   background: #ffffff;
   padding-left: 80px;
   padding-right: 90px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7)
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  z-index: 300;
+}
+@keyframes move-right {
+  from {
+    transform: translateX(-1000px);
+  }
+  70% {
+    transform: translateX(50px);
+  }
+  90% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }  
 }
 .modal-content-show {
   display: block;
+  animation: move-right 0.8s;
 }
 .modal-content-close {
   position: absolute;

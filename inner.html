@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">  
     <title>N'ёrds/Catalog</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic">
   </head>
   <body>
@@ -209,7 +209,7 @@
     <footer>
 <!--футер -карта -->    
       <div class="container footer-map-container footer-map-container-catalog">
-        <img src="img/index/footer-mapnew.png" width="1200" height="416" alt="Где мы находимся">  
+        <div class="map" id="map-canvas"></div> 
 <!--футер -адрес тел компании -->         
         <div class="footer-contacts">
           <div class="footer-contacts-description">            
@@ -265,6 +265,7 @@
       </form>       
     </div>
 <!--скрипт-->
-    <script src="js/script.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>  

@@ -5,7 +5,7 @@
     <meta name="format-detection" content="telephone=no">  
     <title>N'ёrds</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:500&subset=cyrillic">
   </head>
   <body>
@@ -143,17 +143,17 @@
     <footer>
 <!--футер -карта -->    
       <div class="container footer-map-container">
-        <img src="img/index/footer-mapnew.png" width="1200" height="416" alt="Где мы находимся">         
-<!--футер -адрес тел компании -->         
+        <div class="map" id="map-canvas"></div>
+<!--футер -адрес тел компании -->
         <div class="footer-contacts">
           <div class="footer-contacts-description">            
-            <b>Nёrds Design Studio</b>  
-            <div class="footer-contacts-address">  
-            <p>191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>      
-            <p>тел. +7 (812) 275-75-75</p>  
-            </div>  
-            <a href="writeus.html" class="button  callback-button">Напишите нам</a>  
-          </div>  
+            <b>Nёrds Design Studio</b>
+            <div class="footer-contacts-address">
+            <p>191186, Санкт-Петербург, ул.Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            </div>
+            <a href="writeus.html" class="button  callback-button">Напишите нам</a>
+          </div>
         </div>
 <!--футер -маркер-логотип -->        
         <div class="footer-map-logotype">                   
@@ -199,7 +199,8 @@
       </form>       
     </div>
 <!--скрипт-->
-    <script src="js/script.min.js"></script>       
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;signed_in=true"></script>
+    <script src="js/script.js"></script>      
   </body>
 </html>  
       
